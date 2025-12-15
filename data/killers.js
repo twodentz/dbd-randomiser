@@ -413,7 +413,7 @@ const killers = [
     name: "Half Spirits' Torments",
     image: "images/killers/halfSpiritsTorments.png",
     chapter: "Legendary Outfit for The Dredge",
-    bio: "verything had gone terribly wrong. He tried to run, but the sand gave way beneath his feet and he fell. He crawled, half-blind from sand in his eyes. In his darkest moments he heard the screaming, echoes from his memory. He was just a kid, but he had survived where they did not. Growing old had been both a blessing and a curse. As his eyes cleared, something flipped him onto his back. He wailed at the sight of those he'd left behind, back to reclaim him.",
+    bio: "Everything had gone terribly wrong. He tried to run, but the sand gave way beneath his feet and he fell. He crawled, half-blind from sand in his eyes. In his darkest moments he heard the screaming, echoes from his memory. He was just a kid, but he had survived where they did not. Growing old had been both a blessing and a curse. As his eyes cleared, something flipped him onto his back. He wailed at the sight of those he'd left behind, back to reclaim him.",
     legendary: true
   },
   {

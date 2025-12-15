@@ -6,6 +6,14 @@ This tool allows players to randomly generate Survivors or Killers along with un
 
 ---
 
+## Development
+
+Active development happens on the `dev` branch.
+
+The `main` branch is kept stable and represents the latest “ready” version of the project.
+
+---
+
 ## Features
 
 ### Randomisation

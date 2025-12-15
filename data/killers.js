@@ -301,7 +301,7 @@ const killers = [
     name: "William Birkin",
     image: "images/killers/williamBirkin.png",
     chapter: "Legendary Outfit for The Blight",
-    bio: "Dr. William Birkin was a leading scientist on the T-Virus project at Umbrella Corporation. Birkin planned to defect to the US military in exchange for the Golgotha Virus and asylum for his family. However, moles within the military managed to out Birkin's treachery, and he was flanked by Umbrella Security Service soldiers led by HUNK. Birkin was fatally wounded after resisting arrest, and the USS team left with his virus samples. Instead of dying, Birkin injected himself with his last remaining G-virus sample, and mutated into a monster, tracking down the USS team and killing all except for HUNK. He consumed the remaining vials of the G-virus to ensure that it would not be stolen and inadvertently destroyed t-Virus samples in the process, which rats would later consume and spread into the city's water supply, thus making him responsible for the Raccoon City outbreak.",
+    bio: "Dr. William Birkin was a leading scientist on the T-Virus project at Umbrella Corporation. Birkin planned to defect to the US military in exchange for the Golgotha Virus and asylum for his family. However, moles within the military managed to out Birkin's treachery, and he was flanked by Umbrella Security Service soldiers led by HUNK. Birkin was fatally wounded after resisting arrest, and the USS team left with his virus samples. Instead of dying, Birkin injected himself with his last remaining G-virus sample, and mutated into a monster, tracking down the USS team and killing all except for HUNK.",
     legendary: true
   },
   {

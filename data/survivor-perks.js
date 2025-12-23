@@ -1520,7 +1520,6 @@ const survivorPerks = [
     image: "images/perks/survivor/quickAndQuiet.png",
     owner: "Meg Thomas",
     description: `When performing a Rushed action to vault across Pallets or Windows, or to enter or exit Lockers, Quick & Quiet triggers its effect:
-
     • Suppresses all noises related to those interactions and the accompanying Loud Noise Notification.
     
     Quick & Quiet has a cool-down of 25/20/15 seconds.`
@@ -1543,7 +1542,6 @@ const survivorPerks = [
     image: "images/perks/survivor/rapidResponse.png",
     owner: "Orela Rose",
     description: `Whenever you become afflicted by the Exhausted Status Effect, Rapid Response triggers its effect:
-
     • The Aura of the Killer is revealed to you for 2 seconds.
     
     Perform a Rushed action to exit a Locker to voluntarily trigger the Status Effect for 30/25/20 seconds.
@@ -1797,14 +1795,33 @@ const survivorPerks = [
     name: "Smash Hit",
     image: "images/perks/survivor/smashHit.png",
     owner: "Yun-Jin Lee",
-    description: ``
+    description: `Whenever you stun the Killer with a Pallet, Smash Hit triggers its effect:
+
+    • Grants a +50 % Haste Status Effect for 4 seconds.
+    
+    Smash Hit cannot be used while Exhausted.
+    
+    Smash Hit causes the Exhausted Status Effect for 30/25/20 seconds.`
   },
   {
     id: "soleSurvivor",
     name: "Sole Survivor",
     image: "images/perks/survivor/soleSurvivor.png",
     owner: "Laurie Strode",
-    description: ``,
+    description: `As more of your friends fall to the Killer, you become shrouded in isolation and the Killer's Aura-reading abilities towards you are disrupted.
+    
+    Each time a Survivor other than yourself is killed or sacrificed, Sole Survivor gains 1 Token, up to a maximum of 3 Tokens:
+
+    • Grants a stack-able radius of 20/22/24 metres per Token around you, up to a maximum of 60/66/72 metres, within which you are immune to the Killer's Aura-reading abilities.
+    
+    When you are the Last Survivor Standing, you benefit from the following effects:
+
+    • Increases your Repair speed by +75 %.
+    • Increases your Gate and Hatch Opening speeds by +50 %.
+    
+    Increases your chance of becoming the initial Obsession by increasing the default value by +100 %.
+    
+    The Killer can only be obsessed with one Survivor at a time.`,
     licensed: true,
     license: "Halloween"
   },
@@ -1813,14 +1830,25 @@ const survivorPerks = [
     name: "Solidarity",
     image: "images/perks/survivor/solidarity.png",
     owner: "Jane Romero",
-    description: ``
+    description: `While injured, healing another Survivor without a Med-Kit causes Solidarity to apply the following effects:
+
+    • Grants the ability to passively heal yourself while healing other Survivors.
+    • Reduces your Personal Healing speed to 50/60/70 % of your Altruistic Healing speed.`
   },
   {
     id: "soulGuard",
     name: "Soul Guard",
     image: "images/perks/survivor/soulGuard.png",
     owner: "Cheryl Mason",
-    description: ``,
+    description: `Whenever you heal or recover from the Dying State, Soul Guard triggers its primary effect:
+
+    • Grants the Endurance Status Effect for 4/6/8 seconds.
+        Endurance is cancelled prematurely when performing a Conspicuous Action of any kind.
+        This ability has a cool-down of 30 seconds.
+        
+    While suffering from the Cursed Status Effect, Soul Guard applies its secondary effect:
+
+    • Unlocks the Self-Recovery ability, allowing you to fully recover from the Dying State.`,
     licensed: true,
     license: "Silent Hill"
   },
@@ -1829,7 +1857,13 @@ const survivorPerks = [
     name: "Specialist",
     image: "images/perks/survivor/specialist.png",
     owner: "Lara Croft",
-    description: ``,
+    description: `Adventure. Exploration. Excavation.
+    You are in your element.
+    
+    Whenever you unlock or rummage through a Chest, Specialist gains +1 Token, up to a maximum of 6 Tokens:
+
+    • Succeeding a Great Repair Skill Check while repairing a Generator consumes all Tokens.
+    • Permanently reduces the Repair Charges requirement of that Generator by 2/3/4 Charges per Token, up to a maximum of 12/18/24 Charges.`,
     licensed: true,
     license: "Tomb Raider"
   },
@@ -1837,21 +1871,39 @@ const survivorPerks = [
     id: "spineChill",
     name: "Spine Chill",
     image: "images/perks/survivor/spineChill.png",
-    description: ``
+    description: `An unnatural tingle warns you of impending doom.
+    
+    Whenever the Killer is within 36 metres of your location and looking at you with a clear Line of Sight, Spine Chill activates:
+
+    • Warns of the Killer's proximity and their potential awareness of your location by lighting its icon.
+    • Increases your Action speeds for Blessing, Cleansing, Gate-Opening, Healing, Repairing, Sabotaging, Unhooking, and Unlocking by 2/4/6 %.
+        This effect lingers for 0.5 seconds after the Killer loses Line of Sight or exits the Activation range.`
   },
   {
     id: "sprintBurst",
     name: "Sprint Burst",
     image: "images/perks/survivor/sprintBurst.png",
     owner: "Meg Thomas",
-    description: ``
+    description: `Starting to run triggers Sprint Burst:
+    • Grants a +50 % Haste Status Effect for 3 seconds.
+    
+    Sprint Burst cannot be used while Exhausted.
+    
+    Sprint Burst causes the Exhausted Status Effect for 60/50/40 seconds.`
   },
   {
     id: "stakeOut",
     name: "Stake Out",
     image: "images/perks/survivor/stakeOut.png",
     owner: "Detective David Tapp",
-    description: ``,
+    description: `Staying in the Terror Radius without being chased grants +1 Token every 15 seconds, up to a maximum of 2/3/4 Tokens.
+    
+    While performing a skilful interaction that can trigger Skill Checks, you benefit from the following effects:
+    • Converts any Good Skill Check into a Great Skill Check.
+        This consumes -1 Token.
+    • Increases the Progression bonus of those Great Skill Checks by +1 %.
+    
+    Stake Out does not apply to regular Great Skill Checks nor do they consume any Tokens.`,
     licensed: true,
     license: "SAW"
   },
@@ -1860,7 +1912,13 @@ const survivorPerks = [
     name: "Still Sight",
     image: "images/perks/survivor/stillSight.png",
     owner: "Aestri Yazar & Baermar Uraz",
-    description: ``,
+    description: `After standing still for 4/3/2 seconds, Still Sight activates:
+    • The following Auras are revealed to you within 24 meters:
+        Killer
+        Chests
+        Generators
+        
+    Still Sight deactivates once you start moving again.`,
     licensed: true,
     license: "Dungeons & Dragons"
   },
@@ -1869,35 +1927,51 @@ const survivorPerks = [
     name: "Streetwise",
     image: "images/perks/survivor/streetwise.png",
     owner: "Nea Karlsson",
-    description: ``
+    description: `Any Items with Charges you retrieve from Chests benefit from the following primary effect:
+    • Increases their Charges permanently by 60/70/80 %.
+    
+    Whenever your currently equipped Item is depleted for the first time, Streetwise triggers its secondary effect:
+    • The Aura of the Killer is revealed to you for 8 seconds.`
   },
   {
     id: "strengthInShadows",
     name: "Strength in Shadows",
     image: "images/perks/survivor/strengthInShadows.png",
     owner: "Sable Ward",
-    description: ``
+    description: `Whenever you are inside the Basement, Strength in Shadows activates:
+
+    • Unlocks the Strength in Shadows ability, allowing you to self-heal without needing a Med-Kit at 70 % of the normal Healing speed.
+    • Upon finishing a heal in the Basement, the Aura of the Killer is revealed to you for 6/8/10 seconds.`
   },
   {
     id: "teamworkCollectiveStealth",
     name: "Teamwork: Collective Stealth",
     image: "images/perks/survivor/teamworkCollectiveStealth.png",
     owner: "Renato Lyra",
-    description: ``
+    description: `Whenever another Survivor finishes healing you, Teamwork: Collective Stealth activates, and both you and the Survivor who healed you benefit from the following effect:
+    • Suppresses your Scratch Marks for as long as you stay within 8/12/16 metres of one another.
+        This effect lingers for 4 seconds once out of range and resumes upon re-entering it before that timer elapses.
+        
+    Survivors can only be affected by one instance of Teamwork: Collective Stealth at a time.`
   },
   {
     id: "teamworkPowerOfTwo",
     name: "Teamwork: Power of Two",
     image: "images/perks/survivor/teamworkPowerOfTwo.png",
     owner: "Thalita Lyra",
-    description: ``
+    description: `Whenever you finish healing another Survivor, Teamwork: Power of Two activates, and both you and the healed Survivor benefit from the following effect:
+    • Grants a +5 % Haste Status Effect for as long as you stay within 8/12/16 metres of one another.
+        This effect lingers for 4 seconds once out of range and resumes upon re-entering it before that timer elapses.
+        
+    Survivors can only be affected by one instance of Teamwork: Power of Two at a time.`
   },
   {
     id: "teamworkThrowDown",
     name: "Teamwork: Throw Down",
     image: "images/perks/survivor/teamworkThrowDown.png",
     owner: "Michonne Grimes",
-    description: ``,
+    description: `Whenever you blind the Killer by any means or stun them using a Pallet, Teamwork: Throw Down triggers its effect:
+    • Grants the Endurance Status Effect to all other injured Survivors within 24 metres of your location for 6/8/10 seconds.`,
     licensed: true,
     license: "The Walking Dead"
   },
@@ -1906,7 +1980,8 @@ const survivorPerks = [
     name: "Teamwork: Toughen Up",
     image: "images/perks/survivor/teamworkToughenUp.png",
     owner: "Rick Grimes",
-    description: ``,
+    description: `While injured, whenever another Survivor within 24 metres of your location blinds the Killer by any means or stuns them using a Pallet, Teamwork: Toughen Up triggers its effect:
+    • Suppresses your Grunts of Pain, and the creation of Pools of Blood and Scratch Marks for 20/25/30 seconds.`,
     licensed: true,
     license: "The Walking Dead"
   },
@@ -1915,14 +1990,23 @@ const survivorPerks = [
     name: "Technician",
     image: "images/perks/survivor/technician.png",
     owner: "Feng Min",
-    description: ``
+    description: `While repairing a Generator, the following effects apply:
+
+    • Reduces the audible range of all noises related to the Repair interaction by -8 metres.
+    • Increases the Progression penalty incurred when failing a Skill Check by 5/4/3 %.
+    • Suppresses the explosion of the Generator and the Loud Noise Notification usually triggered by that.`
   },
   {
     id: "tenacity",
     name: "Tenacity",
     image: "images/perks/survivor/tenacity.png",
     owner: "Detective David Tapp",
-    description: ``,
+    description: `Your ferocious tenacity in dire situations allows you to benefit from the following effects while in the Dying State:
+
+    • Grants the ability to recover while crawling.
+    • Grants a 30/40/50 % Haste Status Effect.
+    • Reduces the volume of Grunts of Pain by -75 %.
+    • Blocks your Aura from being read.`,
     licensed: true,
     license: "SAW"
   },
@@ -1930,21 +2014,33 @@ const survivorPerks = [
     id: "thisIsNotHappening",
     name: "This Is Not Happening",
     image: "images/perks/survivor/thisIsNotHappening.png",
-    description: ``
+    description: `Whenever you are in the Injured State, This Is Not Happening activates and you benefit from the following effect:
+    • Increases the Success zone for a Great Skill Check by 10/20/30 % for the following interactions:
+        Healing
+        Repairing`
   },
   {
     id: "troubleshooter",
     name: "Troubleshooter",
     image: "images/perks/survivor/troubleshooter.png",
     owner: "Gabriel Soma",
-    description: ``
+    description: `When you are chased by the Killer, Troubleshooter activates:
+
+    • The Aura of the Generator with the most progress is revealed to you.
+    • The Aura of the Killer is revealed to you for 4/5/6 seconds after dropping a Pallet.
+    
+    These effects linger for 6/8/10 seconds after ending the Chase, after which Troubleshooter deactivates.`
   },
   {
     id: "unbreakable",
     name: "Unbreakable",
     image: "images/perks/survivor/unbreakable.png",
     owner: 'William "Bill" Overbeck',
-    description: ``,
+    description: `Whenever you are in the Dying State, Unbreakable activates:
+
+    • Increases your Recovery speed by 25/30/35 %.
+    • Unlocks the Self-Recovery ability, allowing you to fully recover from the Dying State.
+        This ability can only be used once per Trial.`,
     licensed: true,
     license: "Left 4 Dead"
   },
@@ -1953,21 +2049,30 @@ const survivorPerks = [
     name: "Up the Ante",
     image: "images/perks/survivor/upTheAnte.png",
     owner: "Ace Visconti",
-    description: ``
+    description: `Unlocks the ability to attempt Self-Unhooks during the first Hook Stage for all Survivors.
+    
+    For every Survivor still in the Trial, Up the Ante is granted +1 Token:
+    • Increases the Luck at succeeding Self-Unhook attempts for all Survivors by a stack-able 1/2/3 % per Token, up to a maximum of 3/6/9 %.`
   },
   {
     id: "urbanEvasion",
     name: "Urban Evasion",
     image: "images/perks/survivor/urbanEvasion.png",
     owner: "Nea Karlsson",
-    description: ``
+    description: `You benefit from the following permanent effect:
+    • Increases your Movement speed while crouched by 90/95/100 %.`
   },
   {
     id: "vigil",
     name: "Vigil",
     image: "images/perks/survivor/vigil.png",
     owner: "Quentin Smith",
-    description: ``,
+    description: `You recover 43/55/66 % faster from the following:
+    • The Blindness, Broken, Exhausted, Exposed, Haemorrhage, Hindered, Mangled, and Oblivious Status Effects.
+    
+    Vigil extends its effect to all Survivors within 16 metres of your location and lingers for 15 seconds after leaving its Area of Effect.
+    
+    Survivors can only be affected by one instance of Vigil at a time.`,
     licensed: true,
     license: "A Nightmare on Elm Street"
   },
@@ -1976,14 +2081,22 @@ const survivorPerks = [
     name: "Visionary",
     image: "images/perks/survivor/visionary.png",
     owner: "Felix Richter",
-    description: ``
+    description: `You benefit from the following permanent effect:
+    • The Auras of Generators are revealed to you within 32 metres.
+    
+    Visionary is temporarily deactivated for 20/18/16 seconds whenever a Generator is completed.`
   },
   {
     id: "wakeUp",
     name: "Wake Up!",
     image: "images/perks/survivor/wakeUp.png",
     owner: "Quentin Smith",
-    description: ``,
+    description: `Unlocks potential in your Aura-reading ability.
+    
+    Once all Generators are completed, Wake Up! activates:
+    • The Auras of the Exit Gate Switches are revealed to you permanently while within 128 metres.
+    • Your Aura is revealed to all other Survivors within 128 metres while you are opening an Exit Gate.
+    • Increases your Gate-Opening speed by a stack-able 8/10/12.5 % for each Survivor still alive in the Trial, including yourself, up to a maximum of 32/40/50 %.`,
     licensed: true,
     license: "A Nightmare on Elm Street"
   },
@@ -1991,35 +2104,58 @@ const survivorPerks = [
     id: "wellMakeIt",
     name: "We'll Make It",
     image: "images/perks/survivor/wellMakeIt.png",
-    description: ``
+    description: `After unhooking another Survivor, We'll Make It activates for 30/60/90 seconds:
+    • Increases your Altruistic Healing speed by +100 %.`
   },
   {
     id: "wereGonnaLiveForever",
     name: "We're Gonna Live Forever",
     image: "images/perks/survivor/wereGonnaLiveForever.png",
     owner: "David King",
-    description: ``
+    description: `Your few friends deserve the best protection.
+    
+    You benefit from the following effect when healing a dying Survivor:
+    • Increases your Healing speed by +100 %.
+    
+    Any dying Survivor you heal back to the Injured State benefits from the following effect:
+    • Grants the Endurance Status Effect for 6/8/10 seconds.
+        This effect can only be triggered once every 30 seconds.`
   },
   {
     id: "wicked",
     name: "Wicked",
     image: "images/perks/survivor/wicked.png",
     owner: "Sable Ward",
-    description: ``
+    description: `After you are unhooked by any means, Wicked triggers the following effect:
+    • The Aura of the Killer is revealed to you for 16/18/20 seconds.
+    
+    While hooked inside the Basement, Wicked potentially triggers the following effect:
+    • First Hook Stage: 100 % to succeed an attempted Self-Unhook.
+    • Second Hook Stage: Does not trigger the effect.
+    • Last Survivor Standing: Does not trigger the effect.`
   },
   {
     id: "windowsOfOpportunity",
     name: "Windows of Opportunity",
     image: "images/perks/survivor/windowsOfOpportunity.png",
     owner: "Kate Denson",
-    description: ``
+    description: `Unlocks potential in your Aura-reading ability.
+    
+    The Auras of Breakable Walls, Pallets, and Windows are revealed to you within 24/28/32 metres.`
   },
   {
     id: "wiretap",
     name: "Wiretap",
     image: "images/perks/survivor/wiretap.png",
     owner: "Ada Wong",
-    description: ``,
+    description: `After repairing a Generator for the equivalent of 40 % of Progression, Wiretap activates.
+    
+    While active, press the Active Ability button while standing next to a Generator to install a listening device to it with a countdown of 100/110/120 seconds:
+    • Reveals the Aura of the Killer coming within 14 metres of the Bugged Generator to all Survivors.
+    
+    The listening device is deactivated after its countdown has elapsed or the Bugged Generator is damaged.
+    
+    The Auras of Bugged Generators are revealed to all Survivors in yellow.`,
     licensed: true,
     license: "Resident Evil"
   }

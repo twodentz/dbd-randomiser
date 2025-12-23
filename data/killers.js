@@ -54,7 +54,9 @@ const killers = [
     image: "images/killers/theShape.png",
     chapter: "CHAPTER 2: The HALLOWEEN® Chapter",
     bio: "The Shape is a haunting Killer who stalks Survivors to feed his power. His personal Perks, Save the Best for Last, Play with Your Food, and Dying Light, select one Survivor to become his Obsession and will trigger deadly effects based on their status.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "Halloween"
   },
   {
     id: "theHag",
@@ -78,7 +80,9 @@ const killers = [
     image: "images/killers/theLookSee.png",
     chapter: "Legendary Outfit for The Doctor",
     bio: `The Look-See is an evil entity who haunts those unable to let go of their grief. After leaving a cryptic note with the words: "IF YOU YOURSELF CANNOT RELEASE THEN IT WILL COME TO TAKE A PIECE." as a warning of its imminent appearance, The Look-See murders its victim and takes a body part symbolic of the reason for the victim's grief.`,
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Crypt TV"
   },
   {
     id: "pharaohEddie",
@@ -86,7 +90,9 @@ const killers = [
     image: "images/killers/pharaohEddie.png",
     chapter: "Legendary Outfit for The Doctor",
     bio: "In a golden age long erased from maps and memory, Pharaoh Eddie ruled over a sun-drenched empire with an iron will and divine mandate. Beloved by few but feared by all, his laws were absolute, his enemies erased, and his tomb built as a monument to eternity. That eternity was broken when the Black Plague tore through time itself. Called back into the realm of the living by the imbalance of death without judgment, Pharaoh Eddie considers this invasion of the undead a challenge to his eternal rule. He is no mere corpse, he is law incarnate, risen not by magic, but by purpose.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Iron Maiden"
   },
   {
     id: "theHuntress",
@@ -102,7 +108,9 @@ const killers = [
     image: "images/killers/theMordeo.png",
     chapter: "Legendary Outfit for The Huntress",
     bio: `The Mordeo is one of several demons serving "The Mordeo Queen". A Mordeo is created whenever a human entering its territory in the woodlands engages in cannibalism, similar to how a "Wendigo" is created.`,
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Crypt TV"
   },
   {
     id: "theBabaYaga",
@@ -126,7 +134,9 @@ const killers = [
     image: "images/killers/theCannibal.png",
     chapter: "CHAPTER 5.5: LEATHERFACE™",
     bio: "The Cannibal is a chainsaw-wielding Killer, able to trigger a deadly frenzy using his Power, immediately downing anyone in its path. His personal Perks, Knock Out, Barbecue & Chilli, and Franklin's Demise, make Survivors easier to locate while robbing them of their tools and abilities.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "Leatherface"
   },
   {
     id: "theNightmare",
@@ -134,7 +144,9 @@ const killers = [
     image: "images/killers/theNightmare.png",
     chapter: "CHAPTER 6: A Nightmare on Elm Street™",
     bio: "The Nightmare is a nightmare Killer, passively pulling Survivors into his Dream World where Survivors are vulnerable to his Dream Abilities. His Dream Projection ability allows him to quickly appear across the map and put pressure onto Survivors. His personal Perks, Fire Up, Remember Me, and Blood Warden improve his abilities over time and make him stronger as the trial reaches its climax. His Perks revolve around stopping Survivors from fleeing. They will make surviving a real pain for all, and managing to escape the Hunting Ground won't be easy.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "A Nightmare on Elm Street"
   },
   {
     id: "thePig",
@@ -142,7 +154,9 @@ const killers = [
     image: "images/killers/thePig.png",
     chapter: "CHAPTER 7: The SAW™ Chapter",
     bio: "The Pig is a tormenting Killer, able to crouch into stealth mode, then ambush Survivors from a short distance. She can also apply Reverse Bear Traps to downed Survivors, forcing them to remove it before the timer runs out, triggering an instant death. Her personal Perks, Scourge Hook: Hangman's Trick, Surveillance, and Make Your Choice, give her more Map control and expose altruistic Survivors.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "SAW"
   },
   {
     id: "theClown",
@@ -166,7 +180,9 @@ const killers = [
     image: "images/killers/theWarHammerTitan.png",
     chapter: "Legendary Outfit for The Spirit",
     bio: "Lara Tybur is a member of the Tybur family, the highest authority in the nation of Marley and the most respected Eldians of what is otherwise a persecuted ethnic minority, and the wielder of the War Hammer Titan, which was a closely guarded secret.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Attack on Titan"
   },
   {
     id: "tomieKawakami",
@@ -174,7 +190,9 @@ const killers = [
     image: "images/killers/tomieKawakami.png",
     chapter: "Legendary Outfit for The Spirit",
     bio: "Tomie Kawakami is a young woman frequently described as almost impossibly beautiful by those she meets. Tomie is a manipulative, hedonistic, and extremely selfish woman, seducing men to do her bidding.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Junji Ito"
   },
   {
     id: "theLegion",
@@ -190,7 +208,9 @@ const killers = [
     image: "images/killers/hunk.png",
     chapter: "Legendary Outfit for The Legion",
     bio: "HUNK is the code name of a mercenary working for the Umbrella Corporation. Next to nothing is known about the agent, although he is extremely reputable. HUNK is known to have successfully carried out multiple missions, and always coming out as the only survivor, earning him the nickname of the Grim Reaper.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Resident Evil"
   },
   {
     id: "thePlague",
@@ -206,7 +226,9 @@ const killers = [
     image: "images/killers/theGhostFace.png",
     chapter: "CHAPTER 12: Ghost Face®",
     bio: "The Ghost Face is a creepy Killer, able to stalk his victims and sneak up silently using his Power, Night Shroud. Affected Survivors will find themselves vulnerable and oblivious to his presence and must use all of their perception and awareness to protect themselves from his approach. His personal Perks, I'm All Ears, Thrilling Tremors, and Furtive Chase, give him the ability to locate Survivors, defend Generators, and make his Chases unpredictable.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "Ghost Face"
   },
   {
     id: "theDemogorgon",
@@ -214,7 +236,9 @@ const killers = [
     image: "images/killers/theDemogorgon.png",
     chapter: "CHAPTER 13: Stranger Things",
     bio: "The Demogorgon is an unidentified Killer, able to open multiple Portals and traverse between them to cover large distances. Using its Power, Of the Abyss, it can detect any Survivors within a close proximity to the Portals then unleash a leaping attack to inflict damage from a distance. Its personal Perks, Surge, Mindbreaker, and Cruel Limits, impact the environment close to Generators and affect nearby Survivors in unexpected ways.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "Stranger Things"
   },
   {
     id: "theOni",
@@ -238,7 +262,9 @@ const killers = [
     image: "images/killers/theArmouredTitan.png",
     chapter: "Legendary Outfit for The Oni",
     bio: `Reiner was born and raised in the large nation of Marley, where he was oppressed and persecuted for being a Eldian, an ethnic group capable of turning into mindless, monstrous beings known as "Titans." He later joined the military's Warriors unit with other Eldians, and inherited the Armoured Titan. Reiner was tasked alongside three other Warriors with infiltrating the island of Paradis, where the majority of Eldians resided. After breaking into one of the walls protecting the island, they disguised themselves as survivors of the attack and joined the Eldians' military, hoping to seek out information about the "Founding Titan".`,
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Attack on Titan"
   },
   {
     id: "samuraiEddie",
@@ -246,7 +272,9 @@ const killers = [
     image: "images/killers/samuraiEddie.png",
     chapter: "Legendary Outfit for The Oni",
     bio: "Born of a distant eastern land where discipline and blade are one, Samurai Eddie once served a warlord who valued silence, strength, and absolute loyalty. When betrayal shattered his clan and desecrated his shrine, Eddie wandered into self-imposed exile, taking a vow of vengeance and solitude. Now, years later, the zombie apocalypse has spread across continents, and Samurai Eddie has returned, not to serve, but to punish. With armor bound in blood-oath sigils and a blade that hums with ancestral fury, he walks a path of precise violence. Zombies do not respect code or honor. But they will learn to respect his sword. One cut at a time.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Iron Maiden"
   },
   {
     id: "murderousGrizzly",
@@ -254,7 +282,9 @@ const killers = [
     image: "images/killers/murderousGrizzly.png",
     chapter: "Legendary Outfit for The Oni",
     bio: "Murderous Grizzly is a savage manifestation of unchecked fury, born from a twisted legend where beast and bloodlust become one. It embodies raw, animalistic violence; hunting without reason, striking without mercy, and leaving only carnage in its wake.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Nyaight of the Living Cat"
   },
   {
     id: "theDeathslinger",
@@ -270,7 +300,9 @@ const killers = [
     image: "images/killers/strangerEddie.png",
     chapter: "Legendary Outfit for The Deathslinger",
     bio: "Stranger Eddie is a familiar legend made horrifyingly wrong, an alien presence forged from music, madness, and the Entity's will.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Iron Maiden"
   },
   {
     id: "theExecutioner",
@@ -278,7 +310,9 @@ const killers = [
     image: "images/killers/theExecutioner.png",
     chapter: "CHAPTER 16: Silent Hill",
     bio: "The Executioner is a map-manipulation Killer, able to torment Survivors with the hazards he creates. Affected Survivors will be vulnerable to his special Hook, the Cage of Atonement and his special Mori, Final Judgement. His personal Perks, Forced Penance, Trail of Torment, and Deathbound, allow him to aggressively defend his prey while deceiving and tracking Survivors.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "Silent Hill"
   },
   {
     id: "theBlight",
@@ -302,7 +336,9 @@ const killers = [
     image: "images/killers/williamBirkin.png",
     chapter: "Legendary Outfit for The Blight",
     bio: "Dr. William Birkin was a leading scientist on the T-Virus project at Umbrella Corporation. Birkin planned to defect to the US military in exchange for the Golgotha Virus and asylum for his family. However, moles within the military managed to out Birkin's treachery, and he was flanked by Umbrella Security Service soldiers led by HUNK. Birkin was fatally wounded after resisting arrest, and the USS team left with his virus samples. Instead of dying, Birkin injected himself with his last remaining G-virus sample, and mutated into a monster, tracking down the USS team and killing all except for HUNK.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Resident Evil"
   },
   {
     id: "theTwins",
@@ -326,7 +362,9 @@ const killers = [
     image: "images/killers/theNemesis.png",
     chapter: "CHAPTER 20: Resident Evil™",
     bio: "The Nemesis is an unrelenting Killer, capable of attacking at mid-range with his tentacle, while receiving support from Zombies roaming the area. His personal Perks, Lethal Pursuer, Hysteria, and Eruption, allow him to quickly ambush Survivors, while sowing confusion and fear when injuring and hooking them.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "Resident Evil"
   },
   {
     id: "theCenobite",
@@ -334,7 +372,9 @@ const killers = [
     image: "images/killers/theCenobite.png",
     chapter: "CHAPTER 21: Hellraiser™",
     bio: "The Cenobite is a summoning Killer, able to possess Chain Projectiles and use the Lament Configuration to torture every Survivor at once. His personal Perks, Deadlock, Hex: Plaything, and Scourge Hook: Gift of Pain, allow him to slow Generator Progression and continue to torment Survivors who have experienced his sweet suffering.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "Hellraiser"
   },
   {
     id: "theChatterer",
@@ -342,7 +382,9 @@ const killers = [
     image: "images/killers/theChatterer.png",
     chapter: "Legendary Outfit for The Cenobite",
     bio: "Once opened, the puzzle box is not so easily closed. Endless trials filled with hooks and suffering, and dozens of Survivors reborn again and again to torment. In The Entity's Realm, Pinhead's unique talents have found a home like no other. With the gateway now open and the Apex Cenobite already spreading sweet pain throughout The Fog, it was only a matter of time before others arrived to join him in his explorations…",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Hellraiser"
   },
   {
     id: "theArtist",
@@ -366,7 +408,9 @@ const killers = [
     image: "images/killers/missFuchi.png",
     chapter: "Legendary Outfit for The Artist",
     bio: "Miss Fuchi is a grotesque predator hiding behind a flawless smile. Obsessed with beauty and notoriety, she lures victims close before revealing the monstrous truth beneath her appearance. Her presence is intoxicating, terrifying, and impossible to escape.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Junji Ito"
   },
   {
     id: "theLeshen",
@@ -374,7 +418,9 @@ const killers = [
     image: "images/killers/theLeshen.png",
     chapter: "Legendary Outfit for The Artist",
     bio: "The Leshen is an ancient forest spirit, bound to the wilderness and sustained by fear. It commands the land itself, twisting roots, beasts, and shadows into weapons against those who trespass. To enter its domain is to be hunted by the forest itself.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "The Witcher"
   },
   {
     id: "bouletArtist",
@@ -382,7 +428,9 @@ const killers = [
     image: "images/killers/bouletArtist.png",
     chapter: "Legendary Outfit for The Artist",
     bio: "The Boulet Artist is a sadistic visionary who transforms suffering into spectacle. With every stroke, it reshapes flesh and fear alike, turning agony into living art meant to be admired… and endured.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Boulet Brothers"
   },
   {
     id: "theOnryo",
@@ -390,7 +438,9 @@ const killers = [
     image: "images/killers/theOnryo.png",
     chapter: "CHAPTER 23: Sadako Rising",
     bio: "The Onryō is a vengeful ghost imbued with the power of Nensha, The Onryō is able to silently and invisibly traverse the Realm, manifesting when she is ready to strike. Her personal Perks, Scourge Hook: Floods of Rage, Call of Brine, and Merciless Storm, allow her to expose hidden Survivors, survey Generators, and hamper Repair progress.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "The Ring"
   },
   {
     id: "theDredge",
@@ -406,7 +456,9 @@ const killers = [
     image: "images/killers/eddiesTribute.png",
     chapter: "Legendary Outfit for The Dredge",
     bio: "Eddie's Tribute is a relentless embodiment of devotion and wrath. Fueled by rage and loyalty, it stalks its prey with brutal efficiency, honoring a legacy forged in blood and rebellion.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Iron Maiden"
   },
   {
     id: "halfSpiritsTorments",
@@ -414,7 +466,9 @@ const killers = [
     image: "images/killers/halfSpiritsTorments.png",
     chapter: "Legendary Outfit for The Dredge",
     bio: "Everything had gone terribly wrong. He tried to run, but the sand gave way beneath his feet and he fell. He crawled, half-blind from sand in his eyes. In his darkest moments he heard the screaming, echoes from his memory. He was just a kid, but he had survived where they did not. Growing old had been both a blessing and a curse. As his eyes cleared, something flipped him onto his back. He wailed at the sight of those he'd left behind, back to reclaim him.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Junji Ito"
   },
   {
     id: "theMastermind",
@@ -422,7 +476,9 @@ const killers = [
     image: "images/killers/theMastermind.png",
     chapter: "CHAPTER 25: Resident Evil™: PROJECT W",
     bio: "Albert Wesker is a brilliant and ruthless mastermind infused with the Power of Uroboros. His personal Perks, Superior Anatomy, Awakened Awareness, and Terminus, allow him to vault faster, see other Survivors' Auras while carrying one, and cause Survivors to be permanently Broken when the Exit Gates are powered.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "Resident Evil"
   },
   {
     id: "theKnight",
@@ -462,7 +518,9 @@ const killers = [
     image: "images/killers/theXenomorph.png",
     chapter: "CHAPTER 29: Alien",
     bio: "A relentless specimen from a distant planet, The Xenomorph is vicious, agile, and cunning. Its personal Perks, Rapid Brutality, Alien Instinct, and Ultimate Weapon, allow it to cause nearby Survivors to scream, gain Haste after basic attacks, and see Auras of faraway Survivors.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "Alien"
   },
   {
     id: "theXenomorphQueen",
@@ -470,7 +528,9 @@ const killers = [
     image: "images/killers/theXenomorphQueen.png",
     chapter: "Legendary Outfit for The Xenomorph",
     bio: "The Xenomorph Queen is one of the largest forms of the Xenomorph species, growing additional arms and a large head crest, acting as the mother and leader of the hive.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Alien"
   },
   {
     id: "theGoodGuy",
@@ -478,7 +538,9 @@ const killers = [
     image: "images/killers/theGoodGuy.png",
     chapter: "CHAPTER 30: Chucky",
     bio: "The Good Guy is an elusive Killer, capable of deceiving Survivors with his illusory Footfalls and deadly Slice & Dice. His personal Perks, Hex: Two Can Play, Friends 'til the End, and Batteries Included, allow him to blind those who blind him, relentlessly hunt his Obsession, and get faster around completed Generators.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "Chucky"
   },
   {
     id: "theGoodGal",
@@ -486,7 +548,9 @@ const killers = [
     image: "images/killers/theGoodGal.png",
     chapter: "Legendary Outfit for The Good Guy",
     bio: "Tiffany was in love with Charles and thought he had intended to propose to her before he disappeared, but Chucky dismissed. Hurt and enraged, Tiffany trapped Chucky in a playpen and taunted him with a puppet-wedding. While she was taking a bath later on, Chucky managed to escape the playpen and killed Tiffany by throwing a portable TV into the bathtub, electrocuting her. Afterward, Chucky uses the same voodoo magic that originally transferred his soul into the Good Guy doll to transfer Tiffany's into that of the puppet with which she had played a puppet-wedding, creating the Good Gal.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Chucky"
   },
   {
     id: "theUnknown",
@@ -502,7 +566,9 @@ const killers = [
     image: "images/killers/theLich.png",
     chapter: "CHAPTER 32: Dungeons & Dragons",
     bio: "Few dare speak The Lich's true name, for fear that he may hear — or worse. His personal Perks, Weave Attunement, Languid Touch, and Dark Arrogance, allow him to exploit used Items, exhaust those who disturb the Crows, and increase his Vaulting speed.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "Dungeons & Dragons"
   },
   {
     id: "theDarkLord",
@@ -510,7 +576,9 @@ const killers = [
     image: "images/killers/theDarkLord.png",
     chapter: "CHAPTER 33: Castlevania",
     bio: "The Dark Lord, Dracula, is the embodiment of darkness and tragedy. His personal Perks, Hex: Wretched Fate, Human Greed, and Dominance, allow him to slow the Repair speed of the Obsession, reveal the Auras of unopened Chests and nearby Survivors, and temporarily block Chests and Totems.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "Castlevania"
   },
   {
     id: "trueForm",
@@ -518,7 +586,9 @@ const killers = [
     image: "images/killers/trueForm.png",
     chapter: "Legendary Outfit for The Dark Lord",
     bio: "True Form reveals the creature beneath the mask, shedding all pretense of restraint. In this state, raw instinct and overwhelming brutality guide its actions, leaving no room for mercy.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Castlevania"
   },
   {
     id: "theHoundmaster",
@@ -534,7 +604,9 @@ const killers = [
     image: "images/killers/theGhoul.png",
     chapter: "CHAPTER 35: Tokyo Ghoul",
     bio: "The Ghoul has been pushed to his limits and he's hungry for more. His personal Perks, Hex: Nothing but Misery, Forever Entwined, and None Are Free, help him to Hinder Survivors, hook them more quickly, and block Windows and Pallets when all Generators are completed.",
-    legendary: false
+    legendary: false,
+    licensed: true,
+    license: "Tokyo Ghoul"
   },
   {
     id: "rizeKamishiro",
@@ -542,15 +614,19 @@ const killers = [
     image: "images/killers/rizeKamishiro.png",
     chapter: "Legendary Outfit for The Ghoul",
     bio: `Rize was born into the Washuu family as a part of a contingency plan to preserve their ghoul bloodline. Neglected and disgusted at her fate, Rize escaped the family and began living nomadically across Tokyo. As a she grew up, her hunger became so insatiable that she began overeating, which resulted in her becoming a wanted Ghoul under the name of "The Binge Eater".`,
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Tokyo Ghoul"
   },
   {
     id: "theAnimatronic",
     name: "The Animatronic",
     image: "images/killers/theAnimatronic.png",
     chapter: "CHAPTER 36: Five Nights at Freddy's",
-    bio: "The Animatronic always comes back. His personal Perks, Help WantedI, Phantom Fear, and Haywire, help him compromise Generators, make Survivors scream, and regress Exit Gate Switches.",
-    legendary: false
+    bio: "The Animatronic always comes back. His personal Perks, Help Wanted, Phantom Fear, and Haywire, help him compromise Generators, make Survivors scream, and regress Exit Gate Switches.",
+    legendary: false,
+    licensed: true,
+    license: "Five Nights at Freddy's"
   },
   {
     id: "yellowRabbit",
@@ -558,7 +634,9 @@ const killers = [
     image: "images/killers/yellowRabbit.png",
     chapter: "Legendary Outfit for The Animatronic",
     bio: "William Afton is a very clever and calculated individual. Every outcome of every move he makes is thoroughly thought out and determined. He is careful with his murderous rampages and recalls details about them well. Forever locked in his springlock cage after suffering at the hand of his creations, he wears the suit with pride, always ready to kill again.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Five Nights at Freddy's"
   },
   {
     id: "glitchtrap",
@@ -566,7 +644,9 @@ const killers = [
     image: "images/killers/glitchtrap.png",
     chapter: "Legendary Outfit for The Animatronic",
     bio: "Glitchtrap takes on a twisted form of a Spring Bonnie costume - who is a grinning, bipedal, golden-yellow rabbit. They wear a purple star-speckled vest, a purple bow tie, and two black buttons near the top of their chest. They also have stitches stretching across their waving hand. They initially appear translucent, progressing into a less spectral form over time. Glitchtrap was born when unchecked computer code was put into a game to be reused. Little did they know the Virus had other plans, when the fog swept him up, the Entity birthed him anew, a copy made of flesh.",
-    legendary: true
+    legendary: true,
+    licensed: true,
+    license: "Five Nights at Freddy's"
   },
   {
     id: "theKrasue",

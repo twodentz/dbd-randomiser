@@ -639,7 +639,7 @@ const survivors = [
     name: "Dustin Henderson",
     image: "images/survivors/dustinHenderson.png",
     chapter: "CHAPTER 38: Stranger Things Chapter 2",
-    bio: "",
+    bio: "Dustin Henderson is a brilliant and somewhat nerdy high school student. His personal perks, Bada Bada Boom, Change of Plan, and Teamwork: Full Circuit allow him to slowdown Killers, pivot his strategy mid-trial and safely repair generators.",
     legendary: false,
     licensed: true,
     license: "Stranger Things"
@@ -649,7 +649,7 @@ const survivors = [
     name: "Eleven",
     image: "images/survivors/eleven.png",
     chapter: "CHAPTER 38: Stranger Things Chapter 2",
-    bio: "",
+    bio: "Eleven is a former test subject with extrasensory abilities. Her personal perks, Extrasensory Perception, We See You, and Teamwork: Soft-Spoken allow her to scout the area, reveal the Killer's aura and reduce the noise of generators.",
     legendary: false,
     licensed: true,
     license: "Stranger Things"
@@ -659,7 +659,7 @@ const survivors = [
     name: "Eddie Munson",
     image: "images/survivors/eddieMunson.png",
     chapter: "Legendary Outfit for Dustin Henderson",
-    bio: "",
+    bio: "Eddie Munson is a rebellious outcast who refuses to run when it matters most. Armed with quick thinking, fierce loyalty, and a defiant spirit, he'll face the horrors of the Fog head-on, even if it means making one last stand.",
     legendary: true,
     licensed: true,
     license: "Stranger Things"
@@ -669,7 +669,7 @@ const survivors = [
     name: "Robin Buckley",
     image: "images/survivors/robinBuckley.png",
     chapter: "Legendary Outfit for Nancy Wheeler",
-    bio: "",
+    bio: "Robin Buckley is a sharp-witted Survivor whose intelligence and resourcefulness help her stay one step ahead of danger. Quick to improvise and fiercely loyal to those around her, she faces the horrors of the Fog with courage, sarcasm, and a refusal to leave anyone behind.",
     legendary: true,
     licensed: true,
     license: "Stranger Things"
@@ -679,7 +679,7 @@ const survivors = [
     name: "Kwon Tae-young",
     image: "images/survivors/kwonTaeyoung.png",
     chapter: "CHAPTER 39: All-Kill: Comeback",
-    bio: "",
+    bio: "Kwon Tae-young is a hard-working perfectionist who does not rest until he gets results. His personal perks, Flow State, A Place For Us, and Five Moves Ahead allow him to ramp up his efficiency as generators are completed; heal others, especially the Obsession, covertly; and make more informed decisions when within the Killer's Terror Radius.",
     legendary: false
   },
   {
@@ -687,7 +687,7 @@ const survivors = [
     name: "Shane Wiigwaas",
     image: "images/survivors/shaneWiigwaas.png",
     chapter: "CHAPTER 40.5: The Life Road",
-    bio: "",
+    bio: "Shane Wiigwaas follows his own road, hoping to atone for his past mistakes. His personal perks, Wide Open Throttle, Lend a Hand, and Cross-Examination, allow him to reset dropped pallets, give permanent healing charges, and see Light Marks left behind by the Killer.",
     legendary: false
   },
   {
@@ -695,7 +695,7 @@ const survivors = [
     name: "Aurora Stardotter",
     image: "images/survivors/auroraStardotter.png",
     chapter: "CHAPTER 41: Chorus of Sin",
-    bio: "",
+    bio: "Aurora Stardotter is viewed as a savior to her people and gains insight into the future by reading the stars. Her personal perks, Fruits of Your Labor, Salvation's Cry and Boon: Steadfast, allow for special advantages when completing Generators, strategic coordination during chases, and efficient Generator repairs.",
     legendary: false
   },
   {
@@ -703,7 +703,7 @@ const survivors = [
     name: "Shimizu Hinako",
     image: "images/survivors/shimizuHinako.png",
     chapter: "Legendary Outfit for Cheryl Mason",
-    bio: "",
+    bio: `Shimizu Hinako is a Highschool student living in the rural town of Ebisugaoka during the 1960s. She used to be a cheerful kid but due to the expectations placed on her by her family and friends, she became more restrained. She can be described as a bit of a tomboy due to her not being interested in the same things as most other girls her age, and preferred playing with her best friend Shu, one of the only boys her age who didn't look down on her or treat her differently for being a girl, and growing up, the two always played "Space Wars" together. One day however, the town is covered in fog and becomes infested with strange monsters. Hinako is forced to travel through town together with her friends Shu and Rinko to try and find a way out of Ebisugaoka.`,
     legendary: true,
     licensed: true,
     license: "Silent Hill"
@@ -713,7 +713,7 @@ const survivors = [
     name: "Glenn Rhee",
     image: "images/survivors/glennRhee.png",
     chapter: "Legendary Outfit for Rick Grimes",
-    bio: "",
+    bio: "Glenn Rhee is a resourceful Survivor whose quick thinking and selfless nature have carried him through impossible odds. Brave when it matters most and fiercely devoted to those around him, he'll risk everything to ensure no one gets left behind.",
     legendary: true,
     licensed: true,
     license: "The Walking Dead"
@@ -723,7 +723,7 @@ const survivors = [
     name: "William Hudson",
     image: "images/survivors/williamHudson.png",
     chapter: "Legendary Outfit for Ellen Ripley",
-    bio: "",
+    bio: "Private First Class William L. Hudson was a combat technician in the United States Colonial Marine Corps, part of 2nd Battalion Bravo Team. He was a member of the combat unit deployed to Acheron aboard the USS Sulaco in 2179, to investigate the sudden loss of contact with the colony of Hadley's Hope. He was subsequently involved in combating the Xenomorph infestation at the colony.",
     legendary: true,
     licensed: true,
     license: "Alien"

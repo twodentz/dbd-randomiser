@@ -633,5 +633,99 @@ const survivors = [
     chapter: "CHAPTER 37: Sinister Grace",
     bio: "Vee Boonyasak is an energetic drummer whose adventurous nature led to a doomed concert. Her personal Perks, Road Life, One-Two-Three-Four!, and Ghost Notes, allow her to leverage repair work into faster healing, strengthen allies' ability to repair and heal, and recover from Exhausted faster.",
     legendary: false
-  }
+  },
+  {
+    id: "dustinHenderson",
+    name: "Dustin Henderson",
+    image: "images/survivors/dustinHenderson.png",
+    chapter: "CHAPTER 38: Stranger Things Chapter 2",
+    bio: "",
+    legendary: false,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "eleven",
+    name: "Eleven",
+    image: "images/survivors/eleven.png",
+    chapter: "CHAPTER 38: Stranger Things Chapter 2",
+    bio: "",
+    legendary: false,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "eddieMunson",
+    name: "Eddie Munson",
+    image: "images/survivors/eddieMunson.png",
+    chapter: "Legendary Outfit for Dustin Henderson",
+    bio: "",
+    legendary: true,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "robinBuckley",
+    name: "Robin Buckley",
+    image: "images/survivors/robinBuckley.png",
+    chapter: "Legendary Outfit for Nancy Wheeler",
+    bio: "",
+    legendary: true,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "kwonTaeyoung",
+    name: "Kwon Tae-young",
+    image: "images/survivors/kwonTaeyoung.png",
+    chapter: "CHAPTER 39: All-Kill: Comeback",
+    bio: "",
+    legendary: false
+  },
+  {
+    id: "shaneWiigwaas",
+    name: "Shane Wiigwaas",
+    image: "images/survivors/shaneWiigwaas.png",
+    chapter: "CHAPTER 40.5: The Life Road",
+    bio: "",
+    legendary: false
+  },
+  {
+    id: "auroraStardotter",
+    name: "Aurora Stardotter",
+    image: "images/survivors/auroraStardotter.png",
+    chapter: "CHAPTER 41: Chorus of Sin",
+    bio: "",
+    legendary: false
+  },
+  {
+    id: "shimizuHinako",
+    name: "Shimizu Hinako",
+    image: "images/survivors/shimizuHinako.png",
+    chapter: "Legendary Outfit for Cheryl Mason",
+    bio: "",
+    legendary: true,
+    licensed: true,
+    license: "Silent Hill"
+  },
+  {
+    id: "glennRhee",
+    name: "Glenn Rhee",
+    image: "images/survivors/glennRhee.png",
+    chapter: "Legendary Outfit for Rick Grimes",
+    bio: "",
+    legendary: true,
+    licensed: true,
+    license: "The Walking Dead"
+  },
+  {
+    id: "williamHudson",
+    name: "William Hudson",
+    image: "images/survivors/williamHudson.png",
+    chapter: "Legendary Outfit for Ellen Ripley",
+    bio: "",
+    legendary: true,
+    licensed: true,
+    license: "Alien"
+  },
 ];

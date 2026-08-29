@@ -5,21 +5,29 @@ const killerPerks = [
     name: "A Nurse's Calling",
     image: "images/perks/killer/aNursesCalling.png",
     owner: "The Nurse",
-    description: ``
+    description: `Unlocks potential in your Aura-reading ability:
+
+    • The Auras of injured Survivors being healed or healing themselves are revealed to you within 28/30/32 metres.`
   },
   {
     id: "agitation",
     name: "Agitation",
     image: "images/perks/killer/agitation.png",
     owner: "The Trapper",
-    description: ``
+    description: `While carrying a Survivor, Agitation activates:
+
+    • Increases your Carrying speed by 6/12/18 %.
+    • Increases your Terror Radius by +12 metres.`
   },
   {
     id: "alienInstinct",
     name: "Alien Instinct",
     image: "images/perks/killer/alienInstinct.png",
     owner: "The Xenomorph",
-    description: ``,
+    description: `Whenever you hook a Survivor, Alien Instinct activates:
+
+    • The Aura of the farthest Survivor from your current location who is in the Injured State is revealed to you for 8 seconds.
+    • Causes that Survivor to suffer from the Oblivious Status Effect for 40/50/60 seconds.`,
     licensed: true,
     license: "Alien"
   },
@@ -28,14 +36,20 @@ const killerPerks = [
     name: "All-Shaking Thunder",
     image: "images/perks/killer/allShakingThunder.png",
     owner: "The Houndmaster",
-    description: ``
+    description: `After falling from a height, All-Shaking Thunder activates for 15/20/25 seconds:
+
+    • Increases the range of your Lunge Attack by +75 %.
+    
+    All-Shaking Thunder has a cool-down of 5 seconds.`
   },
   {
     id: "awakenedAwareness",
     name: "Awakened Awareness",
     image: "images/perks/killer/awakenedAwareness.png",
     owner: "The Mastermind",
-    description: ``,
+    description: `While carrying a Survivor, you benefit from the following effect:
+
+    • The Auras of other Survivors within 16/18/20 metres of your location are revealed to you.`,
     licensed: true,
     license: "Resident Evil"
   },
@@ -44,14 +58,26 @@ const killerPerks = [
     name: "Bamboozle",
     image: "images/perks/killer/bamboozle.png",
     owner: "The Clown",
-    description: ``
+    description: `You benefit from the following permanent effect:
+
+    • Increases your Vaulting speed by 5/10/15 %.
+    
+    Whenever you vault a Window, Bamboozle calls upon The Entity for the following effect:
+
+    • Blocks it to all Survivors for 8/12/16 seconds.
+        Vaulting it again within that time resets the timer.
+        Vaulting a different one transfers the effect to it instead.
+        
+    Bamboozle does not extend its effects to vaulting a dropped Pallet.`
   },
   {
     id: "barbecueAndChilli",
     name: "Barbecue & Chilli",
     image: "images/perks/killer/barbecueAndChilli.png",
     owner: "The Cannibal",
-    description: ``,
+    description: `A deep bond with The Entity unlocks potential in one's Aura-reading ability.
+
+    After hooking a Survivor, all Survivors who are at least 60/50/40 metres away from that Hook have their Aura revealed to you for 5 seconds.`,
     licensed: true,
     license: "Leatherface"
   },
@@ -60,7 +86,10 @@ const killerPerks = [
     name: "Batteries Included",
     image: "images/perks/killer/batteriesIncluded.png",
     owner: "The Good Guy",
-    description: ``,
+    description: `While within 16 metres of a completed Generator, you benefit from the following effect:
+
+    • Grants a +5 % Haste Status Effect.
+        This effect lingers for 1/3/5 second(s).`,
     licensed: true,
     license: "Chucky"
   },
@@ -69,27 +98,45 @@ const killerPerks = [
     name: "Beast of Prey",
     image: "images/perks/killer/beastOfPrey.png",
     owner: "The Huntress",
-    description: ``
+    description: `Whenever you trigger the Bloodlust Status Effect, Beast of Prey activates for 30/35/40 seconds:
+
+    • Grants the Undetectable Status Effect.`
   },
   {
     id: "bitterMurmur",
     name: "Bitter Murmur",
     image: "images/perks/killer/bitterMurmur.png",
-    description: ``
+    description: `Unlocks potential in your Aura-reading ability.
+    
+    Whenever a Generator is completed, Bitter Murmur triggers its primary effect:
+
+    • The Auras of any Survivors within 16 metres of that Generator are revealed to you for 5 seconds.
+    
+    Once the last Generator is completed, Bitter Murmur triggers its secondary effect:
+
+    • The Auras of all Survivors are revealed to you for 5/7/10 seconds.`
   },
   {
     id: "bloodEcho",
     name: "Blood Echo",
     image: "images/perks/killer/bloodEcho.png",
     owner: "The Oni",
-    description: ``
+    description: `Whenever you hook a Survivor, Blood Echo triggers its effect:
+
+    • Causes all Survivors in the Injured State to suffer from the Exhausted and Haemorrhage Status Effects for 20/25/30 seconds.`
   },
   {
     id: "bloodWarden",
     name: "Blood Warden",
     image: "images/perks/killer/bloodWarden.png",
     owner: "The Nightmare",
-    description: ``,
+    description: `As soon as at least one Exit Gate is opened, Blood Warden activates:
+
+    • The Auras of Survivors are revealed to you, whenever they are inside the Exit Gate.
+    
+    Once per Trial, hooking a Survivor while Blood Warden is active calls upon The Entity to trigger the following effect:
+
+    • Blocks all opened Exit Gates for 40/50/60 seconds, preventing any remaining Survivor from leaving the Trial through them.`,
     licensed: true,
     license: "A Nightmare on Elm Street"
   },
@@ -98,14 +145,19 @@ const killerPerks = [
     name: "Bloodhound",
     image: "images/perks/killer/bloodhound.png",
     owner: "The Wraith",
-    description: ``
+    description: `Bloodhound causes the following effects:
+
+    • Pools of Blood left by injured Survivors appear in bright red.
+    • Extends their lifetime by 2/3/4 seconds.`
   },
   {
     id: "brutalStrength",
     name: "Brutal Strength",
     image: "images/perks/killer/brutalStrength.png",
     owner: "The Trapper",
-    description: ``
+    description: `While performing the Break or Damage action on Breakable Walls, Pallets, or Generators, Brutal Strength triggers its effect:
+
+    • Increases the Action speed by 10/15/20 %.`
   },
   {
     id: "callOfBrine",

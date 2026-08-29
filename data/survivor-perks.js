@@ -2158,5 +2158,196 @@ const survivorPerks = [
     The Auras of Bugged Generators are revealed to all Survivors in yellow.`,
     licensed: true,
     license: "Resident Evil"
-  }
+  },
+  {
+    id: "badaBadaBoom",
+    name: "Bada Bada Boom",
+    image: "images/perks/survivor/badaBadaBoom.png",
+    owner: "Dustin Henderson",
+    description: `After completing 20% worth of Generator repairs, Bada Bada Boom activates:
+    
+    While active, press Active Ability button next to a window to install a Trap, which stays active for up to 40/50/60 seconds.
+    
+    The Trap tiggers when the Killer performs a vault through the window, causing the Killer to suffer from a -50 % Hindered Status Effect for 6 seconds.
+    
+    Bada Bada Boom deactives after triggering successfully or once the timer runs out.
+    
+    The Auras of Trapped Windows are revealed to all Survivors in yellow.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "changeOfPlan",
+    name: "Change of Plan",
+    image: "images/perks/survivor/changeOfPlan.png",
+    owner: "Dustin Henderson",
+    description: `You start the Trial with 2 Tokens.
+    
+    While hiding inside a Locker and holding a non-event Toolbox, press Active Ability button to spend 1 Token and transform your Toolbox into a Med-Kit of the same rarity with a random add-on of the same rarity.
+    
+    The new Med-kit has 80/90/100% of its charges.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "teamworkFullCircuit",
+    name: "Teamwork: Full Circuit",
+    image: "images/perks/survivor/teamworkFullCircuit.png",
+    owner: "Dustin Henderson",
+    description: `For each Survivor repairing a generator with you, the size of the good Skill Check zone is increased by 15/20/25 %.
+    
+    While repairing with at least 1 other Survivor, you repair 5 % faster.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "extrasensoryPerception",
+    name: "Extrasensory Perception",
+    image: "images/perks/survivor/extrasensoryPerception.png",
+    owner: "Eleven",
+    description: `Crouch for 4 seconds to activate this perk. While active:
+
+    You see the Auras of Survivors, the Killer, and a variety of objects. These are revealed in an expanding 44 meter radius.
+      • Revealed objects include Chests, Exit Gates, Generators, Hatch, Items, Pallets, Totems, and Windows.
+    
+    You gain Elusive and Oblivious Status Effects
+    
+    When you stop crouching, or after 11 seconds, all effects of this perk end and it enters a 60/50/40 seconds cool-down.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "weSeeYou",
+    name: "We See You",
+    image: "images/perks/survivor/weSeeYou.png",
+    owner: "Eleven",
+    description: `Gain a token when the Killer reveals your Aura.
+    
+    When you have 4 tokens, they are all consumed, and the Killer's aura is revealed to you and all other Survivors for 10/12.5/15 seconds.
+    
+    This perk has a 10-second cool-down when gaining a token.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "teamworkSoftSpoken",
+    name: "Teamwork: Soft-Spoken",
+    image: "images/perks/survivor/teamworkSoftSpoken.png",
+    owner: "Eleven",
+    description: `For each other Survivor repairing a Generator with you, the range at which the Generator's repair noise is heard is reduced by 15/20/25%.
+    
+    While repairing with at least 1 other Survivor, you repair 5 % faster.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "flowState",
+    name: "Flow State",
+    image: "images/perks/survivor/flowState.png",
+    owner: "Kwon Tae-young",
+    description: `Whenever a Generator is completed, gain a token, up to 5.
+    
+    For each token:
+
+    • Bless and cleanse Totems 8/9/10% faster.
+    • Heal 8/9/10% faster.
+    • Unhook Survivors 8/9/10% faster.`
+  },
+  {
+    id: "aPlaceForUs",
+    name: "A Place For Us",
+    image: "images/perks/survivor/aPlaceForUs.png",
+    owner: "Kwon Tae-young",
+    description: `While healing an another Survivor, both you and the healed Survivor gain Elusive Status Effect.
+    
+    When you finish healing the Obsession, both you and the Obsession gain Elusive Status Effect for 20/25/30 seconds.
+    
+    Reduces your chance of becoming the initial Obsession by reducing the default value by -100%.
+    
+    The Killer can only be obsessed with one Survivor at a time.`
+  },
+  {
+    id: "fiveMovesAhead",
+    name: "Five Moves Ahead",
+    image: "images/perks/survivor/fiveMovesAhead.png",
+    owner: "Kwon Tae-young",
+    description: `This perk activates while you are being chased by the Killer or are inside the Killer's Terror Radius:
+
+    • After you drop a Pallet, you start moving 50% earlier.
+    • See the auras of the 5 closest Pallets and Windows.
+    
+    This perk goes on a 40/35/30 seconds cool-down when you drop a Pallet while this perk is activated.`
+  },
+  {
+    id: "wideOpenThrottle",
+    name: "Wide Open Throttle",
+    image: "images/perks/survivor/wideOpenThrottle.png",
+    owner: "Shane Wiigwaas",
+    description: `Fast-vaulting a Pallet triggers the following effects:
+
+    • Gain 10/12.5/15% Haste Status Effect for 3 seconds.
+    • The Pallet is immediately reset, blocked by the Entity and revealed to all Survivors for 60 seconds.
+    
+    This perk then goes on a 60 second cool-down.`
+  },
+  {
+    id: "lendAHand",
+    name: "Lend a Hand",
+    image: "images/perks/survivor/lendAHand.png",
+    owner: "Shane Wiigwaas",
+    description: `Cleansing or Blessing a Totem activates this perk:
+
+    • Once per Survivor, while healing a Survivor, press Activate Ability 2 to give the healed Survivor 2/3/4 permanent healing charges.`
+  },
+  {
+    id: "crossExamination",
+    name: "Cross-Examination",
+    image: "images/perks/survivor/crossExamination.png",
+    owner: "Shane Wiigwaas",
+    description: `While inside the Killer's Terror Radius and not being chased, you can see Light Marks the Killer leaves behind while moving. Light Marks have a duration of 10 seconds.
+
+    • While standing on a Light Mark, gain Elusive Status Effect. This lingers for 3/4/5 seconds.`
+  },
+  {
+    id: "fruitsOfYourLabor",
+    name: "Fruits of Your Labor",
+    image: "images/perks/survivor/fruitsOfYourLabor.png",
+    owner: "Aurora Stardotter",
+    description: `Whenever a Generator is completed, gain a token.
+    
+    Whenever you finish repairing a Generator, for each token this perk has:
+
+    • Gain +5 % Haste Status Effect for 2 seconds.
+    • Gain 10/15/20 % healing progress.`
+  },
+  {
+    id: "salvationsCry",
+    name: "Salvation's Cry",
+    image: "images/perks/survivor/salvationsCry.png",
+    owner: "Aurora Stardotter",
+    description: `When the Killer starts chasing you:
+
+    • You see the auras of other Survivors for 1/2/3 seconds.
+    • Survivors not being chased see your aura for 5 seconds
+    • Survivors not being chased see the Killer's aura for 5 seconds`
+  },
+  {
+    id: "boonSteadfast",
+    name: "Boon: Steadfast",
+    image: "images/perks/survivor/boonSteadfast.png",
+    owner: "Aurora Stardotter",
+    description: `Press and hold the Active Ability button on a Dull or Hex Totem to bless it and create a Boon Totem.
+    
+    All Survivors within 24 metres hear soft chimes ringing out and benefit from its Boon Effects:
+    
+    Generators within this Boon's range:
+
+    • Regress -50% slower.
+    • Survivors repair them +8/9/10% faster.
+    • Survivors see their auras while inside the Boon's range.
+    
+    Survivors can only be affected by one instance of Boon: Steadfast at a time.
+    
+    Only one Totem can be blessed by your Boon Perks at a time and all of their effects are active on the same Boon Totem.`
+  },
 ];

@@ -1306,4 +1306,32 @@ const killerPerks = [
     licensed: true,
     license: "Friday the 13th"
   },
+  {
+    id: "celestialWitness",
+    name: "Celestial Witness",
+    image: "images/perks/killer/celestialWitness.png",
+    owner: "The Judgment",
+    description: `Every 30 seconds, if the Obsession is 40 metres away from you, you see their aura for 2/2.5/3 seconds. Otherwise, the farthest Survivor becomes the Obsession.`,
+  },
+  {
+    id: "hexUnderYourThumb",
+    name: "Hex: Under Your Thumb",
+    image: "images/perks/killer/hexUnderYourThumb.png",
+    owner: "The Judgment",
+    description: `When a Survivor gains a Hook State, Hex: Under Your Thumb activates on a random Dull Totem:
+
+    • Running Survivors cannot gain more than 25/20/15 % Haste at once.
+    • Whenever a running Survivor within 32 metres gains Haste, the Survivor's location is revealed to you for 4 seconds.
+    
+    The Hex Effects persist until the Hex Totem is either blessed or cleansed by a Survivor, disabling it for the remainder of the Trial.`,
+  },
+  {
+    id: "layWaste",
+    name: "Lay Waste",
+    image: "images/perks/killer/layWaste.png",
+    owner: "The Judgment",
+    description: `Damaging a Generator makes it regress +2 % faster for each Charge it has.
+    
+    This perk has a cool-down of 55/50/45 seconds after damaging a Generator.`,
+  },
 ];

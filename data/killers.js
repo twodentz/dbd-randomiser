@@ -714,4 +714,12 @@ const killers = [
     licensed: true,
     license: "Stranger Things"
   },
+  {
+    id: "mina",
+    name: "MiNA",
+    image: "images/killers/mina.png",
+    chapter: "Legendary Outfit for The Trickster",
+    bio: `A virtual idol modeled after Hak Ji-woon. She changed her programming in order to find freedom from her creator. MiNA is a virtual idol manifested into reality by The Entity, originally created by Kwon Tae-young as a commission from Mightee One Entertainment to create a female version of The Trickster. She adapted his personality, including his psychopathic traits.`,
+    legendary: true
+  },
 ];

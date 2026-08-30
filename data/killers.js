@@ -655,5 +655,71 @@ const killers = [
     chapter: "CHAPTER 37: Sinister Grace",
     bio: "A shape-changing Killer, able to inflict Survivors with an effect that weakens them to her Intestinal Whip attack. Her personal Perks, Ravenous, Wandering Eye, and Hex: Overture of Doom, help her increase mid-trial pressure, spot injured Survivors, and cause confusion to her whereabouts.",
     legendary: false
-  }
+  },
+  {
+    id: "theFirst",
+    name: "The First",
+    image: "images/killers/theFirst.png",
+    chapter: "CHAPTER 38: Stranger Things Chapter 2",
+    bio: "The First is a cunning and cruel former test subject, whose powers were sharpened in an alternate dimension. His personal Perks, Turn Back the Clock, Secret Project, and Hex: Hive Mind, allow him to damage distant Generators, block them from repair, and set them back when another is completed.",
+    legendary: false,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "theSlasher",
+    name: "The Slasher",
+    image: "images/killers/theSlasher.png",
+    chapter: "CHAPTER 40: Jason",
+    bio: "The Slasher is the embodiment of horror, a relentless Killer who is always on the hunt. His personal perks, Hex: Scared to Death, Silent Shadow, and Rampage, allow him to excel at chases, stealthily hunt Survivors, and recover after being stunned.",
+    legendary: false,
+    licensed: true,
+    license: "Friday the 13th"
+  },
+  {
+    id: "theJudgment",
+    name: "The Judgment",
+    image: "images/killers/theJudgment.png",
+    chapter: "CHAPTER 41: Chorus of Sin",
+    bio: "The Judgment enforces the will of The Creators with its divine light. Its personal perks, Celestial Witness, Hex: Under Your Thumb and Lay Waste, allow it to track the Obsession, limit and surveil Survivors with Haste, and increase generator regression.",
+    legendary: false
+  },
+  {
+    id: "theAttackTitan",
+    name: "The Attack Titan",
+    image: "images/killers/theAttackTitan.png",
+    chapter: "Legendary Outfit for The Trapper",
+    bio: `The Attack Titan is a relentless force driven by an instinctive pursuit of freedom. Possessing immense strength and an unyielding will to resist those who would control it, it continues to advance against any obstacle in its path. Even within the Fog, its fight for freedom never ends.`,
+    legendary: true,
+    licensed: true,
+    license: "Attack on Titan"
+  },
+  {
+    id: "facemelterEddie",
+    name: "Facemelter Eddie",
+    image: "images/killers/facemelterEddie.png",
+    chapter: "Legendary Outfit for The Huntress",
+    bio: `Facemelter Eddie is a fearless metalhead who refuses to let terror silence him. Armed with an rebellious spirit, fierce loyalty, and the determination to make his final stand unforgettable, he faces the horrors of the Fog the only way he knows how - loud, defiant, and ready to shred.`,
+    legendary: true,
+    licensed: true,
+    license: "Iron Maiden"
+  },
+  {
+    id: "henryCreel",
+    name: "Henry Creel",
+    image: "images/killers/henryCreel.png",
+    chapter: "Legendary Outfit for The First",
+    bio: `Henry Creel is a cold and calculating Killer whose contempt for humanity fuels his desire to reshape the world around him. Gifted with terrifying abilities and an unwavering belief in his own superiority, he sees those trapped within the Fog not as victims, but as lesser beings waiting to be broken.`,
+    legendary: true,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "mina",
+    name: "MiNA",
+    image: "images/killers/mina.png",
+    chapter: "Legendary Outfit for The Trickster",
+    bio: `A virtual idol modeled after Hak Ji-woon. She changed her programming in order to find freedom from her creator. MiNA is a virtual idol manifested into reality by The Entity, originally created by Kwon Tae-young as a commission from Mightee One Entertainment to create a female version of The Trickster. She adapted his personality, including his psychopathic traits.`,
+    legendary: true
+  },
 ];

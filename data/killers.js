@@ -684,4 +684,14 @@ const killers = [
     bio: "The Judgment enforces the will of The Creators with its divine light. Its personal perks, Celestial Witness, Hex: Under Your Thumb and Lay Waste, allow it to track the Obsession, limit and surveil Survivors with Haste, and increase generator regression.",
     legendary: false
   },
+  {
+    id: "theAttackTitan",
+    name: "The Attack Titan",
+    image: "images/killers/theAttackTitan.png",
+    chapter: "Legendary Outfit for The Trapper",
+    bio: `The Attack Titan is a relentless force driven by an instinctive pursuit of freedom. Possessing immense strength and an unyielding will to resist those who would control it, it continues to advance against any obstacle in its path. Even within the Fog, its fight for freedom never ends.`,
+    legendary: true,
+    licensed: true,
+    license: "Attack on Titan"
+  },
 ];

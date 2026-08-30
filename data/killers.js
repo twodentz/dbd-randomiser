@@ -666,4 +666,14 @@ const killers = [
     licensed: true,
     license: "Stranger Things"
   },
+  {
+    id: "theSlasher",
+    name: "The Slasher",
+    image: "images/killers/theSlasher.png",
+    chapter: "CHAPTER 40: Jason",
+    bio: "The Slasher is the embodiment of horror, a relentless Killer who is always on the hunt. His personal perks, Hex: Scared to Death, Silent Shadow, and Rampage, allow him to excel at chases, stealthily hunt Survivors, and recover after being stunned.",
+    legendary: false,
+    licensed: true,
+    license: "Friday the 13th"
+  },
 ];

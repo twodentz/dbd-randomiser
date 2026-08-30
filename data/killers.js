@@ -694,4 +694,14 @@ const killers = [
     licensed: true,
     license: "Attack on Titan"
   },
+  {
+    id: "facemelterEddie",
+    name: "Facemelter Eddie",
+    image: "images/killers/facemelterEddie.png",
+    chapter: "Legendary Outfit for The Huntress",
+    bio: `Facemelter Eddie is a fearless metalhead who refuses to let terror silence him. Armed with an rebellious spirit, fierce loyalty, and the determination to make his final stand unforgettable, he faces the horrors of the Fog the only way he knows how - loud, defiant, and ready to shred.`,
+    legendary: true,
+    licensed: true,
+    license: "Iron Maiden"
+  },
 ];

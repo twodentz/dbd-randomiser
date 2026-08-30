@@ -2,6 +2,10 @@
 const placeholderCharacter = "images/placeholders/character.png";
 const placeholderPerk = "images/placeholders/perk.png";
 
+const legendaryToggle =
+  document.getElementById("options-toggle-legendary");
+
+legendaryToggle.checked = true;
 let includeLegendary = true;
 
 // Modal for perk descriptions
@@ -436,11 +440,9 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-document
-  .getElementById("options-toggle-legendary")
-  .addEventListener("change", (e) => {
-    includeLegendary = e.target.checked;
-  });
+legendaryToggle.addEventListener("change", (e) => {
+  includeLegendary = e.target.checked;
+});
 
 // INIT
 document.addEventListener("DOMContentLoaded", () => {

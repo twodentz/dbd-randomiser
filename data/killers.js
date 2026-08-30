@@ -676,4 +676,12 @@ const killers = [
     licensed: true,
     license: "Friday the 13th"
   },
+  {
+    id: "theJudgment",
+    name: "The Judgment",
+    image: "images/killers/theJudgment.png",
+    chapter: "CHAPTER 41: Chorus of Sin",
+    bio: "The Judgment enforces the will of The Creators with its divine light. Its personal perks, Celestial Witness, Hex: Under Your Thumb and Lay Waste, allow it to track the Obsession, limit and surveil Survivors with Haste, and increase generator regression.",
+    legendary: false
+  },
 ];

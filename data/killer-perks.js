@@ -1269,4 +1269,41 @@ const killerPerks = [
     licensed: true,
     license: "Stranger Things"
   },
+  {
+    id: "hexScaredToDeath",
+    name: "Hex: Scared to Death",
+    image: "images/perks/killer/hexScaredToDeath.png",
+    owner: "The Slasher",
+    description: `When you Hook 3 different Survivors, Hex: Scared to Death activates on a random Dull Totem and triggers its effect:
+
+    • Basic-breaking a Pallet during a chase causes all Survivors within 13 metres to scream and gain 11/12/13 % Hindered Status Effect for 3 seconds.
+    
+    The Hex Effects persist until the Hex Totem is either blessed or cleansed by a Survivor, disabling it for the remainder of the Trial.`,
+    licensed: true,
+    license: "Friday the 13th"
+  },
+  {
+    id: "rampage",
+    name: "Rampage",
+    image: "images/perks/killer/rampage.png",
+    owner: "The Slasher",
+    description: `Whenever you basic-break a Pallet or a Breakable Wall, gain a token, up to 13
+
+    • Whenever you are blinded or Pallet-stunned, you are granted 1 % Haste Status Effect for each Token this perk has for 13 seconds.
+    
+    This perk has a cool-down of 30/25/20 seconds after being blinded or Pallet-stunned.`,
+    licensed: true,
+    license: "Friday the 13th"
+  },
+  {
+    id: "silentShadow",
+    name: "Silent Shadow",
+    image: "images/perks/killer/silentShadow.png",
+    owner: "The Slasher",
+    description: `When you hook a Survivor, you are granted Undetectable Status Effect for 11/12/13 seconds.
+    
+    When the Exit Gates are powered, you are granted Undetectable for the rest of the Trial.`,
+    licensed: true,
+    license: "Friday the 13th"
+  },
 ];

@@ -759,7 +759,14 @@ button:active {
 .options-modal-content {
   width: min(90%, 650px);
   max-height: 85vh;
-  overflow-y: auto;
+  overflow: visible;
+}
+
+@media (max-height: 700px), (max-width: 520px) {
+  .options-modal-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 }
 
 .options-section {
@@ -794,4 +801,14 @@ button:active {
   margin-top: 4px;
   font-size: 0.85rem;
   color: #999;
+}
+
+.option-title-with-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.option-title-with-info .legendary-info {
+  font-size: 0.7rem;
 }

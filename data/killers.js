@@ -655,5 +655,15 @@ const killers = [
     chapter: "CHAPTER 37: Sinister Grace",
     bio: "A shape-changing Killer, able to inflict Survivors with an effect that weakens them to her Intestinal Whip attack. Her personal Perks, Ravenous, Wandering Eye, and Hex: Overture of Doom, help her increase mid-trial pressure, spot injured Survivors, and cause confusion to her whereabouts.",
     legendary: false
-  }
+  },
+  {
+    id: "theFirst",
+    name: "The First",
+    image: "images/killers/theFirst.png",
+    chapter: "CHAPTER 38: Stranger Things Chapter 2",
+    bio: "The First is a cunning and cruel former test subject, whose powers were sharpened in an alternate dimension. His personal Perks, Turn Back the Clock, Secret Project, and Hex: Hive Mind, allow him to damage distant Generators, block them from repair, and set them back when another is completed.",
+    legendary: false,
+    licensed: true,
+    license: "Stranger Things"
+  },
 ];

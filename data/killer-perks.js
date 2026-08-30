@@ -233,7 +233,10 @@ const killerPerks = [
     name: "Deadlock",
     image: "images/perks/killer/deadlock.png",
     owner: "The Cenobite",
-    description: ``,
+    description: `Each time a Generator is completed, Deadlock calls upon The Entity for the following effects:
+        
+    • Blocks the Generator with the most Progression for 15/20/25 seconds.
+    • The Aura of the Blocked Generator is highlighted to you in white.`,
     licensed: true,
     license: "Hellraiser",
     variants: [
@@ -241,6 +244,10 @@ const killerPerks = [
         id: "noHoldsBarred",
         name: "No Holds Barred",
         image: "images/perks/killer/noHoldsBarred.png",
+        description: `Each time a Generator is completed, No Holds Barred calls upon The Entity for the following effects:
+        
+        • Blocks the Generator with the most Progression for 15/20/25 seconds.
+        • The Aura of the Blocked Generator is highlighted to you in white.`,
         licensed: false
       }
     ]
@@ -523,7 +530,16 @@ const killerPerks = [
     name: "Hex: Plaything",
     image: "images/perks/killer/hexPlaything.png",
     owner: "The Cenobite",
-    description: ``,
+    description: `If there is still a Dull Totem in the environment, Hex: Plaything lights a Hex Totem whenever you hook a Survivor for the first time, cursing them with its Hex Effects.
+        
+    • Inflicts the Oblivious Status Effect.
+    • Blocks the Hex Totem for all other Survivors for 90 seconds.
+        Blocked Hex Totems cannot be cleansed or blessed by Survivors.
+        This does not affect the Cursed Survivor.
+            
+    The Aura of the Hex Totem is revealed to the Cursed Survivor within 24/20/16 metres.
+        
+    The Hex Effects persist until the Hex Totem is either blessed or cleansed by a Survivor, disabling it for the remainder of the Trial.`,
     licensed: true,
     license: "Hellraiser",
     variants: [
@@ -531,6 +547,16 @@ const killerPerks = [
         id: "hexFortunesFool",
         name: "Hex: Fortune's Fool",
         image: "images/perks/killer/hexFortunesFool.png",
+        description: `If there is still a Dull Totem in the environment, Hex: Fortune's Fool lights a Hex Totem whenever you hook a Survivor for the first time, cursing them with its Hex Effects.
+        
+        • Inflicts the Oblivious Status Effect.
+        • Blocks the Hex Totem for all other Survivors for 90 seconds.
+            Blocked Hex Totems cannot be cleansed or blessed by Survivors.
+            This does not affect the Cursed Survivor.
+            
+        The Aura of the Hex Totem is revealed to the Cursed Survivor within 24/20/16 metres.
+        
+        The Hex Effects persist until the Hex Totem is either blessed or cleansed by a Survivor, disabling it for the remainder of the Trial.`,
         licensed: false
       }
     ]
@@ -936,7 +962,17 @@ const killerPerks = [
     name: "Scourge Hook: Gift of Pain",
     image: "images/perks/killer/scourgeHookGiftOfPain.png",
     owner: "The Cenobite",
-    description: ``,
+    description: `At the start of the Trial, 4 Hooks in the environment are changed into Scourge Hooks:
+    
+    • The Auras of these Scourge Hooks are highlighted in white.
+        
+    Each time a Survivor is unhooked from a Scourge Hook, the following effects apply:
+        
+    • Causes that Survivor to suffer from the Haemorrhage Status Effect for 90 seconds.
+        
+    After the first time that Survivor is healed back to full health, they suffer from the following effect until they are injured again by any means:
+        
+    • Reduces their Action speeds for Healing and Repairing by 10/13/16 %.`,
     licensed: true,
     license: "Hellraiser",
     variants: [
@@ -944,6 +980,17 @@ const killerPerks = [
         id: "scourgeHookWeepingWounds",
         name: "Scourge Hook: Weeping Wounds",
         image: "images/perks/killer/scourgeHookWeepingWounds.png",
+        description: `At the start of the Trial, 4 Hooks in the environment are changed into Scourge Hooks:
+        
+        • The Auras of these Scourge Hooks are highlighted in white.
+        
+        Each time a Survivor is unhooked from a Scourge Hook, the following effects apply:
+        
+        • Causes that Survivor to suffer from the Haemorrhage Status Effect for 90 seconds.
+        
+        After the first time that Survivor is healed back to full health, they suffer from the following effect until they are injured again by any means:
+        
+        • Reduces their Action speeds for Healing and Repairing by 10/13/16 %.`,
         licensed: false
       }
     ]

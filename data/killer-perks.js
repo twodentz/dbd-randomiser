@@ -1230,5 +1230,43 @@ const killerPerks = [
     image: "images/perks/killer/zanshinTactics.png",
     owner: "The Oni",
     description: ``
-  }
+  },
+  {
+    id: "hexHiveMind",
+    name: "Hex: Hive Mind",
+    image: "images/perks/killer/hexHiveMind.png",
+    owner: "The First",
+    description: `The first time you hook any Survivor, a random Dull Totem becomes a Hex Totem, provided that a Dull Totem remains in the Trial Grounds.
+    
+    Generators are highlighted; the intensity of the generator's Auras reveals their repair progress.
+
+    As soon as a total of 4 generators have been completed in the Trial:
+
+    • All remaining generators explode, lose 6/8/10 % progess, and start regressing.
+    • The associated Hex Totem becomes dull, and this perk becomes disabled for the remainder of the trial.
+    
+    The Hex Effects persist until the Hex Totem is either blessed or cleansed by a Survivor, disabling it for the remainder of the Trial.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "secretProject",
+    name: "Secret Project",
+    image: "images/perks/killer/secretProject.png",
+    owner: "The First",
+    description: `Whenever a Totem is blessed or cleansed, a random unblocked generator becomes blocked for 20/25/30 seconds.
+    
+    Whenever any number of Generators become blocked, you gain Undetectable Status Effect for 30 seconds.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "turnBackTheClock",
+    name: "Turn Back the Clock",
+    image: "images/perks/killer/turnBackTheClock.png",
+    owner: "The First",
+    description: `After hooking a Survivor, for 40/50/60 seconds, press the Active Ability button to make a target generator within 20 meters explode, lose -10 % progress, and start regressing.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
 ];

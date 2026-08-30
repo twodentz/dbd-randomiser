@@ -11,6 +11,10 @@
       <h1>Dead by Daylight Randomiser</h1>
     </header>
 
+    <button id="options-btn" class="options-btn">
+      Options
+    </button>
+
     <div class="legendary-toggle">
       <label class="legendary-label">
         <input type="checkbox" id="toggle-legendary" checked />
@@ -187,6 +191,66 @@
     <p id="modal-perk-description"></p>
   </div>
 </div>
+
+<div id="options-modal" class="modal hidden">
+  <div class="modal-backdrop"></div>
+
+  <div class="modal-content options-modal-content">
+    <button
+      id="options-close"
+      class="modal-close"
+      aria-label="Close options"
+    >
+      ×
+    </button>
+
+    <h2>Options</h2>
+
+    <section class="options-section">
+      <h3>Characters</h3>
+
+      <label class="option-row">
+        <div>
+          <span class="option-title">Include Legendary Characters</span>
+          <span class="option-description">
+            Allow Legendary Characters to appear in character rolls.
+          </span>
+        </div>
+
+        <input
+          type="checkbox"
+          id="options-toggle-legendary"
+          checked
+        >
+      </label>
+    </section>
+
+    <section class="options-section">
+      <h3>Licensed Content</h3>
+
+      <p class="options-placeholder">
+        Licensed content filtering coming soon.
+      </p>
+    </section>
+
+    <section class="options-section">
+      <h3>Challenge Settings</h3>
+
+      <p class="options-placeholder">
+        Game count challenges coming soon.
+      </p>
+    </section>
+
+    <section class="options-section">
+      <h3>About</h3>
+
+      <p class="option-description">
+        An unofficial Dead by Daylight randomiser.
+      </p>
+    </section>
+  </div>
+</div>
+
   <!-- Scripts -->
   <script src="data/survivors.js"></script>
   <script src="data/killers.js"></script>

@@ -437,7 +437,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 document
-  .getElementById("toggle-legendary")
+  .getElementById("options-toggle-legendary")
   .addEventListener("change", (e) => {
     includeLegendary = e.target.checked;
   });

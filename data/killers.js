@@ -704,4 +704,14 @@ const killers = [
     licensed: true,
     license: "Iron Maiden"
   },
+  {
+    id: "henryCreel",
+    name: "Henry Creel",
+    image: "images/killers/henryCreel.png",
+    chapter: "Legendary Outfit for The First",
+    bio: `Henry Creel is a cold and calculating Killer whose contempt for humanity fuels his desire to reshape the world around him. Gifted with terrifying abilities and an unwavering belief in his own superiority, he sees those trapped within the Fog not as victims, but as lesser beings waiting to be broken.`,
+    legendary: true,
+    licensed: true,
+    license: "Stranger Things"
+  },
 ];

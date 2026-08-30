@@ -755,3 +755,43 @@ button:active {
     height: 140px;
   }
 }
+
+.options-modal-content {
+  width: min(90%, 650px);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.options-section {
+  padding: 18px 0;
+  border-top: 1px solid #333;
+}
+
+.options-section:first-of-type {
+  border-top: none;
+}
+
+.options-section h3 {
+  margin: 0 0 12px;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  cursor: pointer;
+}
+
+.option-title {
+  display: block;
+  font-weight: 600;
+}
+
+.option-description,
+.options-placeholder {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #999;
+}

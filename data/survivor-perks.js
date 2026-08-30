@@ -676,7 +676,32 @@ const survivorPerks = [
     
     The Killer can only be obsessed with one Survivor at a time.`,
     licensed: true,
-    license: "Halloween"
+    license: "Halloween",
+    variants: [
+      {
+        id: "willToLive",
+        name: "Will to Live",
+        image: "images/perks/survivor/willToLive.png",
+        description: `Using whatever is at hand, you stab your aggressor in an ultimate attempt to escape.
+        
+        After being unhooked or unhooking yourself, Will to Live activates for the next 40/50/60 seconds:
+        
+        • When grabbed or picked up by the Killer, succeed a Skill Check to stab the Killer and escape from their grasp.
+          Stuns the Killer for 4 seconds.
+        • Causes you to become the next Obsession.
+    
+        Will to Live is deactivated once the Exit Gates are powered.
+        
+        Will to Live is disabled for the remainder of the Trial after use.
+        
+        Will to Live is deactivated prematurely when performing a Conspicuous Action.
+        
+        Increases your chance of becoming the initial Obsession by increasing the default value by +100 %.
+        
+        The Killer can only be obsessed with one Survivor at a time.`,
+        licensed: false
+      }
+    ]
   },
   {
     id: "dejaVu",
@@ -1308,7 +1333,27 @@ const survivorPerks = [
     
     The Killer can only be obsessed with one Survivor at a time.`,
     licensed: true,
-    license: "Halloween"
+    license: "Halloween",
+    variants: [
+      {
+        id: "boundByObsession",
+        name: "Bound by Obsession",
+        image: "images/perks/survivor/boundByObsession.png",
+        description: `Whenever the Killer reads your Aura, Bound by Obsession activates for the same duration as their Aura-reading action:
+        
+        • The Aura of the Killer is revealed to you.
+        • Increases your Action speeds for Cleansing, Healing, and Repairing actions by 2/4/6 %.
+        
+        If you are the Killer's current Obsession, the following effect triggers automatically every 30 seconds:
+
+        • Your Aura is revealed to the Killer for 3 seconds.
+        
+        Increases your chance of becoming the initial Obsession by increasing the default value by +100 %.
+        
+        The Killer can only be obsessed with one Survivor at a time.`,
+        licensed: false
+      }
+    ]
   },
   {
     id: "offTheRecord",
@@ -1823,7 +1868,29 @@ const survivorPerks = [
     
     The Killer can only be obsessed with one Survivor at a time.`,
     licensed: true,
-    license: "Halloween"
+    license: "Halloween",
+    variants: [
+      {
+        id: "downToTheLast",
+        name: "Down to the Last",
+        image: "images/perks/survivor/downToTheLast.png",
+        description: `As more of your friends fall to the Killer, you become shrouded in isolation and the Killer's Aura-reading abilities towards you are disrupted.
+        
+        Each time a Survivor other than yourself is killed or sacrificed, Down to the Last gains 1 Token, up to a maximum of 3 Tokens:
+        
+        • Grants a stack-able radius of 20/22/24 metres per Token around you, up to a maximum of 60/66/72 metres, within which you are immune to the Killer's Aura-reading abilities.
+    
+        When you are the Last Survivor Standing, you benefit from the following effects:
+
+        • Increases your Repair speed by +75 %.
+        • Increases your Gate and Hatch Opening speeds by +50 %.
+    
+        Increases your chance of becoming the initial Obsession by increasing the default value by +100 %.
+    
+        The Killer can only be obsessed with one Survivor at a time.`,
+        licensed: false
+      }
+    ]
   },
   {
     id: "solidarity",
@@ -2164,7 +2231,7 @@ const survivorPerks = [
     name: "Bada Bada Boom",
     image: "images/perks/survivor/badaBadaBoom.png",
     owner: "Dustin Henderson",
-    description: `After completing 20% worth of Generator repairs, Bada Bada Boom activates:
+    description: `After completing 20 % worth of Generator repairs, Bada Bada Boom activates:
     
     While active, press Active Ability button next to a window to install a Trap, which stays active for up to 40/50/60 seconds.
     
@@ -2185,7 +2252,7 @@ const survivorPerks = [
     
     While hiding inside a Locker and holding a non-event Toolbox, press Active Ability button to spend 1 Token and transform your Toolbox into a Med-Kit of the same rarity with a random add-on of the same rarity.
     
-    The new Med-kit has 80/90/100% of its charges.`,
+    The new Med-kit has 80/90/100 % of its charges.`,
     licensed: true,
     license: "Stranger Things"
   },
@@ -2249,9 +2316,9 @@ const survivorPerks = [
     
     For each token:
 
-    • Bless and cleanse Totems 8/9/10% faster.
-    • Heal 8/9/10% faster.
-    • Unhook Survivors 8/9/10% faster.`
+    • Bless and cleanse Totems 8/9/10 % faster.
+    • Heal 8/9/10 % faster.
+    • Unhook Survivors 8/9/10 % faster.`
   },
   {
     id: "aPlaceForUs",
@@ -2262,7 +2329,7 @@ const survivorPerks = [
     
     When you finish healing the Obsession, both you and the Obsession gain Elusive Status Effect for 20/25/30 seconds.
     
-    Reduces your chance of becoming the initial Obsession by reducing the default value by -100%.
+    Reduces your chance of becoming the initial Obsession by reducing the default value by -100 %.
     
     The Killer can only be obsessed with one Survivor at a time.`
   },
@@ -2273,7 +2340,7 @@ const survivorPerks = [
     owner: "Kwon Tae-young",
     description: `This perk activates while you are being chased by the Killer or are inside the Killer's Terror Radius:
 
-    • After you drop a Pallet, you start moving 50% earlier.
+    • After you drop a Pallet, you start moving 50 % earlier.
     • See the auras of the 5 closest Pallets and Windows.
     
     This perk goes on a 40/35/30 seconds cool-down when you drop a Pallet while this perk is activated.`
@@ -2285,7 +2352,7 @@ const survivorPerks = [
     owner: "Shane Wiigwaas",
     description: `Fast-vaulting a Pallet triggers the following effects:
 
-    • Gain 10/12.5/15% Haste Status Effect for 3 seconds.
+    • Gain 10/12.5/15 % Haste Status Effect for 3 seconds.
     • The Pallet is immediately reset, blocked by the Entity and revealed to all Survivors for 60 seconds.
     
     This perk then goes on a 60 second cool-down.`
@@ -2342,8 +2409,8 @@ const survivorPerks = [
     
     Generators within this Boon's range:
 
-    • Regress -50% slower.
-    • Survivors repair them +8/9/10% faster.
+    • Regress -50 % slower.
+    • Survivors repair them +8/9/10 % faster.
     • Survivors see their auras while inside the Boon's range.
     
     Survivors can only be affected by one instance of Boon: Steadfast at a time.

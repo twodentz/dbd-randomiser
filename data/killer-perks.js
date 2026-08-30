@@ -301,9 +301,28 @@ const killerPerks = [
     name: "Dying Light",
     image: "images/perks/killer/dyingLight.png",
     owner: "The Shape",
-    description: ``,
+    description: `Each time you hook a Survivor other than your Obsession, you gain +1 Token:
+    
+    • For as long as the Obsession is alive, all other Survivors suffer from a stack-able 2/2.5/3 % per Token Action Speed penalty to Repairing, Healing, and Sabotaging, up to a maximum of 22/27.5/33 % or 11 Tokens.
+    • The Obsession is unaffected by this penalty and instead granted a permanent +33 % Action Speed bonus to Unhooking and Healing other Survivors.
+
+    You can only be obsessed with one Survivor at a time.`,
     licensed: true,
-    license: "Halloween"
+    license: "Halloween",
+    variants: [
+      {
+        id: "cullTheWeak",
+        name: "Cull the Weak",
+        image: "images/perks/killer/cullTheWeak.png",
+        description: `Each time you hook a Survivor other than your Obsession, you gain +1 Token:
+        
+        • For as long as the Obsession is alive, all other Survivors suffer from a stack-able 2/2.5/3 % per Token Action Speed penalty to Repairing, Healing, and Sabotaging, up to a maximum of 22/27.5/33 % or 11 Tokens.
+        • The Obsession is unaffected by this penalty and instead granted a permanent +33 % Action Speed bonus to Unhooking and Healing other Survivors.
+
+        You can only be obsessed with one Survivor at a time.`,
+        licensed: false
+      }
+    ]
   },
   {
     id: "enduring",
@@ -794,9 +813,34 @@ const killerPerks = [
     name: "Play with Your Food",
     image: "images/perks/killer/playWithYourFood.png",
     owner: "The Shape",
-    description: ``,
+    description: `Losing your Obsession in a chase causes Play with Your Food to gain +1 Token, up to a maximum of 3 Tokens, and performing a Basic or Special Attack with the potential to damage a Survivor causes it to lose -1 Token.
+    
+    While having at least 1 Token, you benefit from the following effect:
+    
+    • Grants a stack-able 3/4/5 % Haste Status Effect per Token, up to a maximum of 9/12/15 %.
+        
+    Play with Your Food has a cool-down of 10 seconds between gaining additional Tokens.
+        
+    You can only be obsessed with one Survivor at a time.`,
     licensed: true,
-    license: "Halloween"
+    license: "Halloween",
+    variants: [
+      {
+        id: "seeHowTheyRun",
+        name: "See How They Run",
+        image: "images/perks/killer/cullTheWeak.png",
+        description: `Losing your Obsession in a chase causes See How They Run to gain +1 Token, up to a maximum of 3 Tokens, and performing a Basic or Special Attack with the potential to damage a Survivor causes it to lose -1 Token.
+        
+        While having at least 1 Token, you benefit from the following effect:
+        
+        • Grants a stack-able 3/4/5 % Haste Status Effect per Token, up to a maximum of 9/12/15 %.
+        
+        See How They Run has a cool-down of 10 seconds between gaining additional Tokens.
+        
+        You can only be obsessed with one Survivor at a time.`,
+        licensed: false
+      }
+    ]
   },
   {
     id: "popGoesTheWeasel",
@@ -849,9 +893,34 @@ const killerPerks = [
     name: "Save the Best for Last",
     image: "images/perks/killer/saveTheBestForLast.png",
     owner: "The Shape",
-    description: ``,
+    description: `Damaging any Survivor other than the Obsession with a Basic Attack causes Save the Best for Last to gain +1 Token, up to a maximum of 6/7/8 Tokens.
+    
+    Damaging the Obsession with either a Basic or Special Attack causes Save the Best for Last to lose -2 Tokens:
+        
+    • Grants a stack-able -5 % per Token Cool-down time reduction on successful Basic Attacks, up to a maximum of 30/35/40 %.
+        
+    Save the Best for Last freezes its current Token Count once the Obsession is sacrificed or killed.
+        
+    You can only be obsessed with one Survivor at a time.`,
     licensed: true,
-    license: "Halloween"
+    license: "Halloween",
+    variants: [
+      {
+        id: "keepThemWaiting",
+        name: "Keep Them Waiting",
+        image: "images/perks/killer/keepThemWaiting.png",
+        description: `Damaging any Survivor other than the Obsession with a Basic Attack causes Keep Them Waiting to gain +1 Token, up to a maximum of 6/7/8 Tokens.
+        
+        Damaging the Obsession with either a Basic or Special Attack causes Keep Them Waiting to lose -2 Tokens:
+        
+        • Grants a stack-able -5 % per Token Cool-down time reduction on successful Basic Attacks, up to a maximum of 30/35/40 %.
+        
+        Keep Them Waiting freezes its current Token Count once the Obsession is sacrificed or killed.
+        
+        You can only be obsessed with one Survivor at a time.`,
+        licensed: false
+      }
+    ]
   },
   {
     id: "scourgeHookFloodsOfRage",

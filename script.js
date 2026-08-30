@@ -402,6 +402,19 @@ function setupButtons() {
   document
   .querySelector("#perk-modal .modal-backdrop")
   .addEventListener("click", closePerkModal);
+
+  //OPTIONS
+  document
+  .getElementById("options-btn")
+  .addEventListener("click", openOptionsModal);
+
+document
+  .getElementById("options-close")
+  .addEventListener("click", closeOptionsModal);
+
+document
+  .querySelector("#options-modal .modal-backdrop")
+  .addEventListener("click", closeOptionsModal);
 }
 
 document
@@ -439,3 +452,14 @@ document.addEventListener("DOMContentLoaded", () => {
   updateCharacterDisplay("killer");
   updatePerkDisplay("killer");
 });
+
+// OPTIONS MENU
+const optionsModal = document.getElementById("options-modal");
+
+function openOptionsModal() {
+  optionsModal.classList.remove("hidden");
+}
+
+function closeOptionsModal() {
+  optionsModal.classList.add("hidden");
+}

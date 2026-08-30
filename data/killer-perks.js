@@ -1230,5 +1230,108 @@ const killerPerks = [
     image: "images/perks/killer/zanshinTactics.png",
     owner: "The Oni",
     description: ``
-  }
+  },
+  {
+    id: "hexHiveMind",
+    name: "Hex: Hive Mind",
+    image: "images/perks/killer/hexHiveMind.png",
+    owner: "The First",
+    description: `The first time you hook any Survivor, a random Dull Totem becomes a Hex Totem, provided that a Dull Totem remains in the Trial Grounds.
+    
+    Generators are highlighted; the intensity of the generator's Auras reveals their repair progress.
+
+    As soon as a total of 4 generators have been completed in the Trial:
+
+    • All remaining generators explode, lose 6/8/10 % progess, and start regressing.
+    • The associated Hex Totem becomes dull, and this perk becomes disabled for the remainder of the trial.
+    
+    The Hex Effects persist until the Hex Totem is either blessed or cleansed by a Survivor, disabling it for the remainder of the Trial.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "secretProject",
+    name: "Secret Project",
+    image: "images/perks/killer/secretProject.png",
+    owner: "The First",
+    description: `Whenever a Totem is blessed or cleansed, a random unblocked generator becomes blocked for 20/25/30 seconds.
+    
+    Whenever any number of Generators become blocked, you gain Undetectable Status Effect for 30 seconds.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "turnBackTheClock",
+    name: "Turn Back the Clock",
+    image: "images/perks/killer/turnBackTheClock.png",
+    owner: "The First",
+    description: `After hooking a Survivor, for 40/50/60 seconds, press the Active Ability button to make a target generator within 20 meters explode, lose -10 % progress, and start regressing.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "hexScaredToDeath",
+    name: "Hex: Scared to Death",
+    image: "images/perks/killer/hexScaredToDeath.png",
+    owner: "The Slasher",
+    description: `When you Hook 3 different Survivors, Hex: Scared to Death activates on a random Dull Totem and triggers its effect:
+
+    • Basic-breaking a Pallet during a chase causes all Survivors within 13 metres to scream and gain 11/12/13 % Hindered Status Effect for 3 seconds.
+    
+    The Hex Effects persist until the Hex Totem is either blessed or cleansed by a Survivor, disabling it for the remainder of the Trial.`,
+    licensed: true,
+    license: "Friday the 13th"
+  },
+  {
+    id: "rampage",
+    name: "Rampage",
+    image: "images/perks/killer/rampage.png",
+    owner: "The Slasher",
+    description: `Whenever you basic-break a Pallet or a Breakable Wall, gain a token, up to 13
+
+    • Whenever you are blinded or Pallet-stunned, you are granted 1 % Haste Status Effect for each Token this perk has for 13 seconds.
+    
+    This perk has a cool-down of 30/25/20 seconds after being blinded or Pallet-stunned.`,
+    licensed: true,
+    license: "Friday the 13th"
+  },
+  {
+    id: "silentShadow",
+    name: "Silent Shadow",
+    image: "images/perks/killer/silentShadow.png",
+    owner: "The Slasher",
+    description: `When you hook a Survivor, you are granted Undetectable Status Effect for 11/12/13 seconds.
+    
+    When the Exit Gates are powered, you are granted Undetectable for the rest of the Trial.`,
+    licensed: true,
+    license: "Friday the 13th"
+  },
+  {
+    id: "celestialWitness",
+    name: "Celestial Witness",
+    image: "images/perks/killer/celestialWitness.png",
+    owner: "The Judgment",
+    description: `Every 30 seconds, if the Obsession is 40 metres away from you, you see their aura for 2/2.5/3 seconds. Otherwise, the farthest Survivor becomes the Obsession.`,
+  },
+  {
+    id: "hexUnderYourThumb",
+    name: "Hex: Under Your Thumb",
+    image: "images/perks/killer/hexUnderYourThumb.png",
+    owner: "The Judgment",
+    description: `When a Survivor gains a Hook State, Hex: Under Your Thumb activates on a random Dull Totem:
+
+    • Running Survivors cannot gain more than 25/20/15 % Haste at once.
+    • Whenever a running Survivor within 32 metres gains Haste, the Survivor's location is revealed to you for 4 seconds.
+    
+    The Hex Effects persist until the Hex Totem is either blessed or cleansed by a Survivor, disabling it for the remainder of the Trial.`,
+  },
+  {
+    id: "layWaste",
+    name: "Lay Waste",
+    image: "images/perks/killer/layWaste.png",
+    owner: "The Judgment",
+    description: `Damaging a Generator makes it regress +2 % faster for each Charge it has.
+    
+    This perk has a cool-down of 55/50/45 seconds after damaging a Generator.`,
+  },
 ];

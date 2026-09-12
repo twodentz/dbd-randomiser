@@ -156,6 +156,21 @@ function updatePlayerCard(playerIndex) {
     image.src = perk.image;
     image.alt = perk.name;
   });
+
+  updateFinishedState(card, player);
+}
+
+// Finished State
+function updateFinishedState(card, player) {
+  card.classList.toggle("is-finished", player.finished);
+
+  const resultButtons = card.querySelectorAll(
+    ".challenge-result-btn"
+  );
+
+  resultButtons.forEach(button => {
+    button.disabled = player.finished;
+  });
 }
 
 // --------------------------------------------------
@@ -176,16 +191,25 @@ function handleEscape(playerIndex) {
   const player = challengeState.players[playerIndex];
   const column = survivorColumns[player.column];
 
+  if (player.finished) return;
+
   // If there is another Survivor ahead, move forward.
   if (player.position < column.length - 1) {
     player.position += 1;
     updatePlayerCard(playerIndex);
     return;
   }
+
+  player.finished = true;
+  player.finishingSurvivor = getCurrentSurvivor(player);
+
+  updatePlayerCard(playerIndex);
 }
 
 function handleSacrifice(playerIndex) {
   const player = challengeState.players[playerIndex];
+
+  if (player.finished) return;
 
   if (player.position > 0) {
     player.position -= 1;

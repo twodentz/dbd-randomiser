@@ -102,6 +102,23 @@ body {
   font-size: 1.15rem;
 }
 
+.challenge-finished-label {
+  display: none;
+  margin: 0 0 14px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.challenge-player-card.is-finished .challenge-finished-label {
+  display: block;
+}
+
+.challenge-player-card.is-finished .challenge-result-btn {
+  cursor: default;
+  opacity: 0.5;
+}
+
 .challenge-perks {
   position: absolute;
   left: 50%;

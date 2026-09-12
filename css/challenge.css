@@ -115,8 +115,19 @@ body {
 
 .challenge-result-btn {
   width: 100%;
-  padding: 10px 12px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   cursor: pointer;
+}
+
+.challenge-result-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 

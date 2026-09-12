@@ -285,6 +285,23 @@ function handleSacrifice(playerIndex) {
   updatePlayerCard(playerIndex);
 }
 
+function resetChallenge() {
+  challengeState.completed = false;
+  challengeState.failed = false;
+  challengeState.failedPlayer = null;
+
+  challengeState.players.forEach(player => {
+    player.position = 0;
+    player.consecutiveSacrifices = 0;
+    player.finished = false;
+    player.finishingSurvivor = null;
+  });
+
+  updateChallengeDisplay();
+  updateChallengeCompletion();
+  updateChallengeFailure();
+}
+
 // --------------------------------------------------
 // Event Listeners
 // --------------------------------------------------
@@ -304,6 +321,10 @@ document
       handleSacrifice(index);
     });
   });
+
+document
+  .querySelector("#challenge-reset")
+  .addEventListener("click", resetChallenge);
 
 // --------------------------------------------------
 // Initialise

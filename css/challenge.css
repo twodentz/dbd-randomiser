@@ -1,0 +1,156 @@
+body {
+  min-height: 100vh;
+}
+
+.challenge-header {
+  width: min(1400px, 92%);
+  margin: 0 auto;
+  padding: 32px 0 24px;
+}
+
+.challenge-back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.challenge-heading h1 {
+  margin: 0 0 8px;
+}
+
+.challenge-heading p {
+  margin: 0;
+  max-width: 700px;
+  color: #999;
+}
+
+
+.challenge-page {
+  width: min(1400px, 92%);
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+
+.challenge-status {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.challenge-status > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.challenge-status-label {
+  font-size: 0.8rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+
+.challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+
+.challenge-player-card {
+  padding: 16px;
+  border: 1px solid #333;
+  background: #111;
+}
+
+
+.challenge-player-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.challenge-player-label {
+  font-weight: 600;
+}
+
+.challenge-player-rank {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+
+.challenge-survivor {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #090909;
+}
+
+.challenge-survivor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.challenge-survivor-name {
+  margin: 14px 0;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+
+.challenge-result-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.challenge-result-btn {
+  width: 100%;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+
+.challenge-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+#challenge-reset {
+  padding: 10px 18px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1100px) {
+  .challenge-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 600px) {
+  .challenge-header,
+  .challenge-page {
+    width: min(94%, 1400px);
+  }
+
+  .challenge-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .challenge-status {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

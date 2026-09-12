@@ -1,6 +1,5 @@
 const PLAYER_COUNT = 4;
 
-
 // --------------------------------------------------
 // Challenge Data
 // --------------------------------------------------
@@ -9,7 +8,8 @@ const baseSurvivors = survivors.filter(
   survivor => !survivor.legendary && survivor.name !== "Baermar Uraz"
 );
 
-const completeSurvivorCount = Math.floor(baseSurvivors.length / PLAYER_COUNT) * PLAYER_COUNT;
+const completeSurvivorCount =
+  Math.floor(baseSurvivors.length / PLAYER_COUNT) * PLAYER_COUNT;
 
 const challengeSurvivors = baseSurvivors.slice(0, completeSurvivorCount);
 
@@ -18,14 +18,12 @@ const survivorColumns = Array.from(
   () => []
 );
 
-
 // Distribute Survivors across four columns in release order.
 challengeSurvivors.forEach((survivor, index) => {
   const columnIndex = index % PLAYER_COUNT;
 
   survivorColumns[columnIndex].push(survivor);
 });
-
 
 // --------------------------------------------------
 // Challenge State
@@ -35,15 +33,11 @@ const challengeState = {
   players: survivorColumns.map((column, index) => ({
     player: index,
     column: index,
-
-    // Start with the oldest Survivor in the column.
     position: 0,
-
     finished: false,
     finishingSurvivor: null,
   })),
 };
-
 
 // --------------------------------------------------
 // Rank Helpers
@@ -53,7 +47,6 @@ function getPlayerRank(player) {
   const column = survivorColumns[player.column];
   return column.length - player.position;
 }
-
 
 function getRankEmblem(rank) {
   if (rank === 1) {
@@ -75,7 +68,6 @@ function getRankEmblem(rank) {
   return "images/ranks/bronze.png";
 }
 
-
 // --------------------------------------------------
 // Survivor Helpers
 // --------------------------------------------------
@@ -84,23 +76,21 @@ function getChallengeSurvivorName(survivor) {
   if (survivor.name === "Aestri Yazar") {
     return "Aestri Yazar & Baermar Uraz";
   }
-
   return survivor.name;
 }
 
 function getCurrentSurvivor(player) {
   const column = survivorColumns[player.column];
-
   return column[player.position];
 }
 
-
 function getSurvivorPerks(survivor) {
-  const ownerName = survivor.name === "Aestri Yazar" ? "Aestri Yazar & Baermar Uraz" : survivor.name;
+  const ownerName = getChallengeSurvivorName(survivor);
 
-  return survivorPerks.filter(perk => perk.owner === ownerName);
+  return survivorPerks.filter(
+    perk => perk.owner === ownerName
+  );
 }
-
 
 // --------------------------------------------------
 // Player Card Rendering
@@ -118,7 +108,6 @@ function updatePlayerCard(playerIndex) {
 
   if (!card) return;
 
-
   // Survivor
   const survivorImage = card.querySelector(
     ".challenge-survivor-image"
@@ -130,9 +119,7 @@ function updatePlayerCard(playerIndex) {
 
   survivorImage.src = survivor.image;
   survivorImage.alt = survivor.name;
-
   survivorName.textContent = getChallengeSurvivorName(survivor);
-
 
   // Rank
   const rank = getPlayerRank(player);
@@ -147,9 +134,7 @@ function updatePlayerCard(playerIndex) {
 
   rankImage.src = getRankEmblem(rank);
   rankImage.alt = `Rank ${rank}`;
-
   rankNumber.textContent = rank;
-
 
   // Unique Perks
   const perks = getSurvivorPerks(survivor);
@@ -173,7 +158,6 @@ function updatePlayerCard(playerIndex) {
   });
 }
 
-
 // --------------------------------------------------
 // Challenge Rendering
 // --------------------------------------------------
@@ -185,7 +169,7 @@ function updateChallengeDisplay() {
 }
 
 // --------------------------------------------------
-// Button Helpers
+// Challenge Actions
 // --------------------------------------------------
 
 function handleEscape(playerIndex) {
@@ -198,9 +182,6 @@ function handleEscape(playerIndex) {
     updatePlayerCard(playerIndex);
     return;
   }
-
-  // Final Survivor reached.
-  console.log(`Player ${playerIndex + 1} has completed their column.`);
 }
 
 function handleSacrifice(playerIndex) {
@@ -212,6 +193,10 @@ function handleSacrifice(playerIndex) {
   }
 }
 
+// --------------------------------------------------
+// Event Listeners
+// --------------------------------------------------
+
 document
   .querySelectorAll(".challenge-escape-btn")
   .forEach((button, index) => {
@@ -219,14 +204,14 @@ document
       handleEscape(index);
     });
   });
-  
+
 document
   .querySelectorAll(".challenge-sacrifice-btn")
   .forEach((button, index) => {
     button.addEventListener("click", () => {
       handleSacrifice(index);
     });
-  });  
+  });
 
 // --------------------------------------------------
 // Initialise

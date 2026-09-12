@@ -6,7 +6,7 @@ const PLAYER_COUNT = 4;
 // --------------------------------------------------
 
 const baseSurvivors = survivors.filter(
-  survivor => !survivor.legendary
+  survivor => !survivor.legendary && survivor.name !== "Baermar Uraz"
 );
 
 const completeSurvivorCount = Math.floor(baseSurvivors.length / PLAYER_COUNT) * PLAYER_COUNT;
@@ -80,6 +80,14 @@ function getRankEmblem(rank) {
 // Survivor Helpers
 // --------------------------------------------------
 
+function getChallengeSurvivorName(survivor) {
+  if (survivor.name === "Aestri Yazar") {
+    return "Aestri Yazar & Baermar Uraz";
+  }
+
+  return survivor.name;
+}
+
 function getCurrentSurvivor(player) {
   const column = survivorColumns[player.column];
 
@@ -88,9 +96,9 @@ function getCurrentSurvivor(player) {
 
 
 function getSurvivorPerks(survivor) {
-  return survivorPerks.filter(
-    perk => perk.owner === survivor.name
-  );
+  const ownerName = survivor.name === "Aestri Yazar" ? "Aestri Yazar & Baermar Uraz" : survivor.name;
+
+  return survivorPerks.filter(perk => perk.owner === ownerName);
 }
 
 
@@ -123,7 +131,7 @@ function updatePlayerCard(playerIndex) {
   survivorImage.src = survivor.image;
   survivorImage.alt = survivor.name;
 
-  survivorName.textContent = survivor.name;
+  survivorName.textContent = getChallengeSurvivorName(survivor);
 
 
   // Rank

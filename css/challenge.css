@@ -170,6 +170,19 @@ body {
   flex-shrink: 0;
 }
 
+.challenge-failure {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.challenge-failure h2 {
+  margin: 0 0 8px;
+}
+
+.challenge-failure-message {
+  margin: 0;
+}
+
 .challenge-controls {
   display: flex;
   justify-content: center;

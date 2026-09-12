@@ -1,4 +1,5 @@
 const PLAYER_COUNT = 4;
+const MAX_CONSECUTIVE_SACRIFICES = 3;
 
 // --------------------------------------------------
 // Challenge Data
@@ -30,10 +31,13 @@ challengeSurvivors.forEach((survivor, index) => {
 // --------------------------------------------------
 
 const challengeState = {
+  failed: false,
+  failedPlayer: null,
   players: survivorColumns.map((column, index) => ({
     player: index,
     column: index,
     position: 0,
+    consecutiveSacrifices: 0,
     finished: false,
     finishingSurvivor: null,
   })),
@@ -183,6 +187,28 @@ function updateChallengeDisplay() {
   });
 }
 
+function updateChallengeFailure(){
+  const failure = document.querySelector(".challenge-failure");
+  const failureMessage = document.querySelector(".challenge-failure-message");
+
+  const cards = document.querySelectorAll(".challenge-player-card");
+
+  failure.hidden = !challengeState.failed;
+
+  cards.forEach((card, index) => {
+    const player = challengeState.players[index];
+    const resultButtons = card.querySelectorAll(".challenge-result-btn");
+
+    resultButtons.forEach(button => {
+      button.disabled = challengeState.failed || player.finished
+    });
+  });
+
+  if (challengeState.failed && challengeState.failedPlayer !== null) {
+    failureMessage.textContent = `Player ${challengeState.failedPlayer + 1} was sacrificed to the Entity`;
+  }
+}
+
 // --------------------------------------------------
 // Challenge Actions
 // --------------------------------------------------
@@ -191,7 +217,9 @@ function handleEscape(playerIndex) {
   const player = challengeState.players[playerIndex];
   const column = survivorColumns[player.column];
 
-  if (player.finished) return;
+  if (challengeState.failed || player.finished) return;
+
+  player.consecutiveSacrifices = 0;
 
   // If there is another Survivor ahead, move forward.
   if (player.position < column.length - 1) {
@@ -209,7 +237,18 @@ function handleEscape(playerIndex) {
 function handleSacrifice(playerIndex) {
   const player = challengeState.players[playerIndex];
 
-  if (player.finished) return;
+  if (challengeState.failed || player.finished) return;
+
+  player.consecutiveSacrifices += 1;
+
+  console.log(`Player ${playerIndex + 1} sacrifice streak: ${player.consecutiveSacrifices}`);
+
+  if (player.consecutiveSacrifices >= MAX_CONSECUTIVE_SACRIFICES) {
+    challengeState.failed = true;
+    challengeState.failedPlayer = playerIndex;
+    updateChallengeFailure();
+    return;
+  }
 
   if (player.position > 0) {
     player.position -= 1;

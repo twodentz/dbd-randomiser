@@ -30,25 +30,6 @@ body {
   padding-bottom: 40px;
 }
 
-.challenge-status {
-  display: flex;
-  gap: 32px;
-  margin-bottom: 24px;
-}
-
-.challenge-status > div {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.challenge-status-label {
-  font-size: 0.8rem;
-  color: #999;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
 .challenge-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

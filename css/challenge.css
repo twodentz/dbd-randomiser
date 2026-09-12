@@ -188,6 +188,19 @@ body {
   flex-shrink: 0;
 }
 
+.challenge-complete {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.challenge-complete h2 {
+  margin: 0 0 8px;
+}
+
+.challenge-complete p {
+  margin: 0;
+}
+
 .challenge-failure {
   margin-top: 28px;
   text-align: center;

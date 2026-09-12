@@ -31,6 +31,7 @@ challengeSurvivors.forEach((survivor, index) => {
 // --------------------------------------------------
 
 const challengeState = {
+  completed: false,
   failed: false,
   failedPlayer: null,
   players: survivorColumns.map((column, index) => ({
@@ -195,6 +196,21 @@ function updateChallengeDisplay() {
   });
 }
 
+function updateChallengeCompletion() {
+  const completion = document.querySelector(".challenge-complete");
+  const cards = document.querySelectorAll(".challenge-player-card");
+  completion.hidden = !challengeState.completed;
+
+  cards.forEach((cards, index) => {
+    const player = challengeState.players[index];
+    const resultButtons = cards.querySelectorAll(".challenge-result-btn");
+
+    resultButtons.forEach(button => {
+      button.disabled = challengeState.completed || player.finished;
+    });
+  });
+}
+
 function updateChallengeFailure(){
   const failure = document.querySelector(".challenge-failure");
   const failureMessage = document.querySelector(".challenge-failure-message");
@@ -225,7 +241,7 @@ function handleEscape(playerIndex) {
   const player = challengeState.players[playerIndex];
   const column = survivorColumns[player.column];
 
-  if (challengeState.failed || player.finished) return;
+  if (challengeState.completed || challengeState.failed || player.finished) return;
 
   player.consecutiveSacrifices = 0;
 
@@ -239,13 +255,18 @@ function handleEscape(playerIndex) {
   player.finished = true;
   player.finishingSurvivor = getCurrentSurvivor(player);
 
+  challengeState.completed = challengeState.players.every(
+    player => player.finished
+  );
+
   updatePlayerCard(playerIndex);
+  updateChallengeCompletion();
 }
 
 function handleSacrifice(playerIndex) {
   const player = challengeState.players[playerIndex];
 
-  if (challengeState.failed || player.finished) return;
+  if (challengeState.completed || challengeState.failed || player.finished) return;
 
   player.consecutiveSacrifices += 1;
 

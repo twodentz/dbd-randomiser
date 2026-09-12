@@ -2,26 +2,10 @@ body {
   min-height: 100vh;
 }
 
-.challenge-header {
-  width: min(1400px, 92%);
-  margin: 0 auto;
-  padding: 32px 0 24px;
-}
-
 .challenge-back-link {
   display: inline-block;
   margin-bottom: 20px;
   text-decoration: none;
-}
-
-.challenge-heading h1 {
-  margin: 0 0 8px;
-}
-
-.challenge-heading p {
-  margin: 0;
-  max-width: 700px;
-  color: #999;
 }
 
 .challenge-page {
@@ -232,7 +216,6 @@ body {
 }
 
 @media (max-width: 600px) {
-  .challenge-header,
   .challenge-page {
     width: min(94%, 1400px);
   }

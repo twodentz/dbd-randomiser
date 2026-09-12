@@ -3,144 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Survivor Challenge</title>
-
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/challenge.css">
 </head>
 
 <body>
-
   <header class="challenge-header">
-    <a href="index.html" class="challenge-back-link">
-      ← Back to Randomiser
-    </a>
-
+    <a href="index.html" class="challenge-back-link">← Back to Randomiser</a>
     <div class="challenge-heading">
       <h1>Survivor Challenge</h1>
-      <p>
-        Escape to advance. Get sacrificed to fall back.
-        Complete your column to become an Anchor.
-      </p>
+      <p>Escape to advance. Get sacrificed to fall back. Complete your column to become an Anchor.</p>
     </div>
   </header>
 
   <main class="challenge-page">
-
     <section class="challenge-status">
       <div>
         <span class="challenge-status-label">Game</span>
         <span id="challenge-game-count">1</span>
       </div>
-
       <div>
         <span class="challenge-status-label">Players Finished</span>
         <span id="challenge-finished-count">0 / 4</span>
       </div>
     </section>
 
-
     <section class="challenge-grid">
 
       <!-- Player 1 -->
       <article class="challenge-player-card" data-player="0">
-
         <div class="challenge-player-header">
           <span class="challenge-player-label">Player 1</span>
           <div class="challenge-player-rank">
             <img class="challenge-rank-icon" src="images/ranks/bronze.png" alt="Rank emblem">
-            <span class="challenge-rank-number">
-              —
-            </span>
+            <span class="challenge-rank-number">—</span>
           </div>
         </div>
 
         <div class="challenge-survivor">
-
-          <img
-            class="challenge-survivor-image"
-            src="images/placeholders/character.png"
-            alt="Player 1 Survivor"
-          >
-
+          <img class="challenge-survivor-image" src="images/placeholders/character.png" alt="Player 1 Survivor">
           <div class="challenge-perks">
-
             <button class="challenge-perk" type="button">
-              <img
-                src="images/placeholders/perk.png"
-                alt="Survivor perk"
-              >
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
             </button>
 
             <button class="challenge-perk" type="button">
-              <img
-                src="images/placeholders/perk.png"
-                alt="Survivor perk"
-              >
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
             </button>
 
             <button class="challenge-perk" type="button">
-              <img
-                src="images/placeholders/perk.png"
-                alt="Survivor perk"
-              >
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
             </button>
-
           </div>
-
         </div>
 
-        <h2 class="challenge-survivor-name">
-          Survivor
-        </h2>
+        <h2 class="challenge-survivor-name">Survivor</h2>
 
         <div class="challenge-result-buttons">
-
-          <button
-            class="challenge-result-btn challenge-escape-btn"
-            type="button"
-          >
+          <button class="challenge-result-btn challenge-escape-btn" type="button">
             <img class="challenge-result-icon" src="images/icons/escape-icon.png" alt="">
             <span>Escape</span>
           </button>
 
-          <button
-            class="challenge-result-btn challenge-sacrifice-btn"
-            type="button"
-          >
+          <button class="challenge-result-btn challenge-sacrifice-btn" type="button">
             <img class="challenge-result-icon" src="images/icons/sacrifice-icon.png" alt="">
             <span>Sacrifice</span>
           </button>
-
         </div>
-
       </article>
-
 
       <!-- Player 2 -->
       <article class="challenge-player-card" data-player="1">
-
         <div class="challenge-player-header">
           <span class="challenge-player-label">Player 2</span>
           <div class="challenge-player-rank">
             <img class="challenge-rank-icon" src="images/ranks/bronze.png" alt="Rank emblem">
-            <span class="challenge-rank-number">
-              —
-            </span>
+            <span class="challenge-rank-number">—</span>
           </div>
         </div>
 
         <div class="challenge-survivor">
-
-          <img
-            class="challenge-survivor-image"
-            src="images/placeholders/character.png"
-            alt="Player 2 Survivor"
-          >
-
+          <img class="challenge-survivor-image" src="images/placeholders/character.png" alt="Player 2 Survivor">
           <div class="challenge-perks">
-
             <button class="challenge-perk" type="button">
               <img src="images/placeholders/perk.png" alt="Survivor perk">
             </button>
@@ -152,61 +97,37 @@
             <button class="challenge-perk" type="button">
               <img src="images/placeholders/perk.png" alt="Survivor perk">
             </button>
-
           </div>
-
         </div>
 
-        <h2 class="challenge-survivor-name">
-          Survivor
-        </h2>
+        <h2 class="challenge-survivor-name">Survivor</h2>
 
         <div class="challenge-result-buttons">
-
-          <button
-            class="challenge-result-btn challenge-escape-btn"
-            type="button"
-          >
+          <button class="challenge-result-btn challenge-escape-btn" type="button">
             <img class="challenge-result-icon" src="images/icons/escape-icon.png" alt="">
             <span>Escape</span>
           </button>
 
-          <button
-            class="challenge-result-btn challenge-sacrifice-btn"
-            type="button"
-          >
+          <button class="challenge-result-btn challenge-sacrifice-btn" type="button">
             <img class="challenge-result-icon" src="images/icons/sacrifice-icon.png" alt="">
             <span>Sacrifice</span>
           </button>
-
         </div>
-
       </article>
-
 
       <!-- Player 3 -->
       <article class="challenge-player-card" data-player="2">
-
         <div class="challenge-player-header">
           <span class="challenge-player-label">Player 3</span>
           <div class="challenge-player-rank">
             <img class="challenge-rank-icon" src="images/ranks/bronze.png" alt="Rank emblem">
-            <span class="challenge-rank-number">
-              —
-            </span>
+            <span class="challenge-rank-number">—</span>
           </div>
         </div>
 
         <div class="challenge-survivor">
-
-          <img
-            class="challenge-survivor-image"
-            src="images/placeholders/character.png"
-            alt="Player 3 Survivor"
-          >
-
+          <img class="challenge-survivor-image" src="images/placeholders/character.png" alt="Player 3 Survivor">
           <div class="challenge-perks">
-
             <button class="challenge-perk" type="button">
               <img src="images/placeholders/perk.png" alt="Survivor perk">
             </button>
@@ -218,61 +139,38 @@
             <button class="challenge-perk" type="button">
               <img src="images/placeholders/perk.png" alt="Survivor perk">
             </button>
-
           </div>
-
         </div>
 
-        <h2 class="challenge-survivor-name">
-          Survivor
-        </h2>
+        <h2 class="challenge-survivor-name">Survivor</h2>
 
         <div class="challenge-result-buttons">
-
-          <button
-            class="challenge-result-btn challenge-escape-btn"
-            type="button"
-          >
+          <button class="challenge-result-btn challenge-escape-btn" type="button">
             <img class="challenge-result-icon" src="images/icons/escape-icon.png" alt="">
             <span>Escape</span>
           </button>
 
-          <button
-            class="challenge-result-btn challenge-sacrifice-btn"
-            type="button"
-          >
+          <button class="challenge-result-btn challenge-sacrifice-btn" type="button">
             <img class="challenge-result-icon" src="images/icons/sacrifice-icon.png" alt="">
             <span>Sacrifice</span>
           </button>
-
         </div>
-
       </article>
-
 
       <!-- Player 4 -->
       <article class="challenge-player-card" data-player="3">
-
         <div class="challenge-player-header">
           <span class="challenge-player-label">Player 4</span>
           <div class="challenge-player-rank">
             <img class="challenge-rank-icon" src="images/ranks/bronze.png" alt="Rank emblem">
-            <span class="challenge-rank-number">
-              —
-            </span>
+            <span class="challenge-rank-number">—</span>
           </div>
         </div>
 
         <div class="challenge-survivor">
-
-          <img
-            class="challenge-survivor-image"
-            src="images/placeholders/character.png"
-            alt="Player 4 Survivor"
-          >
+          <img class="challenge-survivor-image" src="images/placeholders/character.png" alt="Player 4 Survivor">
 
           <div class="challenge-perks">
-
             <button class="challenge-perk" type="button">
               <img src="images/placeholders/perk.png" alt="Survivor perk">
             </button>
@@ -284,50 +182,31 @@
             <button class="challenge-perk" type="button">
               <img src="images/placeholders/perk.png" alt="Survivor perk">
             </button>
-
           </div>
-
         </div>
 
-        <h2 class="challenge-survivor-name">
-          Survivor
-        </h2>
+        <h2 class="challenge-survivor-name">Survivor</h2>
 
         <div class="challenge-result-buttons">
-
-          <button
-            class="challenge-result-btn challenge-escape-btn"
-            type="button"
-          >
+          <button class="challenge-result-btn challenge-escape-btn" type="button">
             <img class="challenge-result-icon" src="images/icons/escape-icon.png" alt="">
             <span>Escape</span>
           </button>
 
-          <button
-            class="challenge-result-btn challenge-sacrifice-btn"
-            type="button"
-          >
+          <button class="challenge-result-btn challenge-sacrifice-btn" type="button">
             <img class="challenge-result-icon" src="images/icons/sacrifice-icon.png" alt="">
             <span>Sacrifice</span>
           </button>
-
         </div>
-
       </article>
-
     </section>
 
-
     <section class="challenge-controls">
-
       <button id="challenge-reset" type="button">
         Reset Challenge
       </button>
-
     </section>
-
   </main>
-
 
   <script src="data/survivors.js"></script>
   <script src="data/survivor-perks.js"></script>

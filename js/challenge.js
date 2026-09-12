@@ -161,10 +161,13 @@ function updatePlayerCard(playerIndex) {
     image.alt = perk.name;
   });
 
+  // Finished State
   updateFinishedState(card, player);
+
+  // Sacrifice Warning
+  updateSacrificeWarning(card, player);
 }
 
-// Finished State
 function updateFinishedState(card, player) {
   card.classList.toggle("is-finished", player.finished);
 
@@ -175,6 +178,11 @@ function updateFinishedState(card, player) {
   resultButtons.forEach(button => {
     button.disabled = player.finished;
   });
+}
+
+function updateSacrificeWarning(card, player) {
+  card.classList.toggle("has-sacrifice-warning", player.consecutiveSacrifices === 1);
+  card.classList.toggle("has-sacrifice-danger", player.consecutiveSacrifices === 2);
 }
 
 // --------------------------------------------------
@@ -252,8 +260,8 @@ function handleSacrifice(playerIndex) {
 
   if (player.position > 0) {
     player.position -= 1;
-    updatePlayerCard(playerIndex);
   }
+  updatePlayerCard(playerIndex);
 }
 
 // --------------------------------------------------

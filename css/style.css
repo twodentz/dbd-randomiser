@@ -126,6 +126,48 @@ body::after {
 }
 
 /* =========================
+   App Navigation
+   ========================= */
+
+.app-nav {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+
+  margin-bottom: 24px;
+}
+
+.app-nav a {
+  position: relative;
+  padding: 8px 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.app-nav a:hover {
+  color: #fff;
+}
+
+.app-nav a[aria-current="page"] {
+  color: #fff;
+}
+
+.app-nav a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  left: 0;
+  height: 1px;
+  background: var(--entity-red);
+  box-shadow: 0 0 8px var(--entity-red);
+}
+
+/* =========================
    Buttons
    ========================= */
 

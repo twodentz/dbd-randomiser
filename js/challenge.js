@@ -203,6 +203,15 @@ function handleEscape(playerIndex) {
   console.log(`Player ${playerIndex + 1} has completed their column.`);
 }
 
+function handleSacrifice(playerIndex) {
+  const player = challengeState.players[playerIndex];
+
+  if (player.position > 0) {
+    player.position -= 1;
+    updatePlayerCard(playerIndex);
+  }
+}
+
 document
   .querySelectorAll(".challenge-escape-btn")
   .forEach((button, index) => {
@@ -210,6 +219,14 @@ document
       handleEscape(index);
     });
   });
+  
+document
+  .querySelectorAll(".challenge-sacrifice-btn")
+  .forEach((button, index) => {
+    button.addEventListener("click", () => {
+      handleSacrifice(index);
+    });
+  });  
 
 // --------------------------------------------------
 // Initialise

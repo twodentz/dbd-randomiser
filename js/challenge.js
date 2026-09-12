@@ -176,6 +176,32 @@ function updateChallengeDisplay() {
   });
 }
 
+// --------------------------------------------------
+// Button Helpers
+// --------------------------------------------------
+
+function handleEscape(playerIndex) {
+  const player = challengeState.players[playerIndex];
+  const column = survivorColumns[player.column];
+
+  // If there is another Survivor ahead, move forward.
+  if (player.position < column.length - 1) {
+    player.position += 1;
+    updatePlayerCard(playerIndex);
+    return;
+  }
+
+  // Final Survivor reached.
+  console.log(`Player ${playerIndex + 1} has completed their column.`);
+}
+
+document
+  .querySelectorAll(".challenge-escape-btn")
+  .forEach((button, index) => {
+    button.addEventListener("click", () => {
+      handleEscape(index);
+    });
+  });
 
 // --------------------------------------------------
 // Initialise

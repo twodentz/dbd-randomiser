@@ -162,16 +162,14 @@ body {
 .challenge-rank-number {
   position: absolute;
   inset: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 0.95rem;
   font-weight: 700;
   line-height: 1;
-
   pointer-events: none;
+  transform: translateY(-2px);
 }
 
 

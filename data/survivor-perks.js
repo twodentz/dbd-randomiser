@@ -881,7 +881,7 @@ const survivorPerks = [
     id: "fastTrack",
     name: "Fast Track",
     image: "images/perks/survivor/fastTrack.png",
-    owner: "Yun-Jin Lee",
+    owner: "Lee Yun-jin",
     description: `Whenever a Survivor other than yourself is hooked, Fast Track is granted 1/2/3 Token(s), up to a maximum of 9/18/27 Tokens.
 
     • Succeeding a Great Repair Skill Check consumes all accumulated Tokens.
@@ -1798,7 +1798,7 @@ const survivorPerks = [
     id: "selfPreservation",
     name: "Self-Preservation",
     image: "images/perks/survivor/selfPreservation.png",
-    owner: "Yun-Jin Lee",
+    owner: "Lee Yun-jin",
     description: `Whenever another Survivor within 16 metres of your location is hit by a Basic or Special Attack, Self-Preservation triggers its effect:
 
     • Suppresses your Grunts of Pain, and the creation of Pools of Blood and Scratch Marks for 6/8/10 seconds.`
@@ -1839,7 +1839,7 @@ const survivorPerks = [
     id: "smashHit",
     name: "Smash Hit",
     image: "images/perks/survivor/smashHit.png",
-    owner: "Yun-Jin Lee",
+    owner: "Lee Yun-jin",
     description: `Whenever you stun the Killer with a Pallet, Smash Hit triggers its effect:
 
     • Grants a +50 % Haste Status Effect for 4 seconds.

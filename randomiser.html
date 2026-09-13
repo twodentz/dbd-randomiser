@@ -16,23 +16,47 @@
         <a href="challenge.html">Adept Trials</a>
       </nav>
       <h1>Chaos Shuffle</h1>
+      <div class="mode-accordions">
+        <section class="mode-accordion">
+          <button class="mode-accordion-toggle" type="button" aria-expanded="false" aria-controls="chaos-how-to-play-content">
+            <img class="mode-accordion-image" src="images/icons/how-to-play.png" alt="" aria-hidden="true">
+            <span>How to Play</span>
+            <span class="mode-accordion-icon" aria-hidden="true">▸</span>
+          </button>
+          
+          <div class="mode-accordion-content" id="chaos-how-to-play-content" hidden>
+            <p>Leave your Survivor, Killer and perk loadout to chance.</p>
+            <ul>
+              <li>Randomise Character selects a random Survivor or Killer.</li>
+              <li>Randomise Perks generates four unique random perks.</li>
+              <li>Randomise Everything selects both a character and a full perk loadout.</li>
+              <li>Individual perks can be rerolled without creating duplicates.</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="mode-accordion">
+          <button class="mode-accordion-toggle" type="button" aria-expanded="false" aria-controls="chaos-options-content">
+            <img class="mode-accordion-image" src="images/icons/options.png" alt="" aria-hidden="true">
+            <span>Options</span>
+            <span class="mode-accordion-icon" aria-hidden="true">▸</span>
+          </button>
+          
+          <div class="mode-accordion-content" id="chaos-options-content" hidden>
+            <div class="legendary-toggle">
+              <label class="custom-checkbox-label mode-option">
+                <input type="checkbox" id="toggle-legendary" checked />
+                <span class="custom-checkbox" aria-hidden="true"></span>
+                <span class="mode-option-text">
+                  <strong>Include Legendary Skins</strong>
+                  <small>Include Legendary characters as separate characters in the randomiser.</small>
+                </span>
+              </label>
+            </div>
+          </div>
+        </section>
+      </div>
     </header>
-
-    <div class="legendary-toggle">
-      <label class="legendary-label">
-        <input type="checkbox" id="toggle-legendary" checked />
-        <span class="custom-checkbox"></span>
-        <span class="label-text">Include Legendary Skins</span>
-      </label>
-      
-      <span class="legendary-info" tabindex="0">
-        ⓘ
-        <span class="tooltip">
-          Legendary characters are alternate versions or licensed skins
-          that share perks and gameplay with their base character.
-        </span>
-      </span>
-    </div>
 
     <!-- Tabs -->
     <nav class="tabs">
@@ -199,6 +223,7 @@
   <script src="data/killers.js"></script>
   <script src="data/survivor-perks.js"></script>
   <script src="data/killer-perks.js"></script>
+  <script src="js/script.js"></script>
   <script src="js/randomiser.js"></script>
 </body>
 </html>

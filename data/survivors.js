@@ -260,10 +260,10 @@ const survivors = [
   },
   {
     id: "yunJinLee",
-    name: "Yun-Jin Lee",
+    name: "Lee Yun-jin",
     image: "images/survivors/yunJinLee.png",
     chapter: "CHAPTER 19: All-Kill",
-    bio: "Yun-Jin Lee is a self-interested music producer, able to advance her goals during turbulent times. Her personal Perks, Fast Track, Smash Hit, and Self-Preservation, allow her to improve her abilities when others are harmed, and quickly escape from a chase.",
+    bio: "Lee Yun-jin is a self-interested music producer, able to advance her goals during turbulent times. Her personal Perks, Fast Track, Smash Hit, and Self-Preservation, allow her to improve her abilities when others are harmed, and quickly escape from a chase.",
     legendary: false
   },
   {

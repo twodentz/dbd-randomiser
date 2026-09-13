@@ -253,6 +253,18 @@ button:active {
   opacity: 0.6;
 }
 
+.legal-disclaimer {
+  max-width: 650px;
+  margin: 12px auto 0;
+
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  line-height: 1.5;
+  text-align: center;
+
+  opacity: 0.6;
+}
+
 /* =========================
    Utilities
    ========================= */

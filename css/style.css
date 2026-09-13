@@ -168,6 +168,88 @@ body::after {
 }
 
 /* =========================
+   Mode Accordions
+   ========================= */
+
+.mode-accordion {
+  width: min(100%, 700px);
+  margin: 10px auto 24px;
+}
+
+.mode-accordion-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  border: 1px solid var(--border-soft);
+  border-radius: 4px;
+  background: var(--bg-panel-soft);
+  color: var(--text-main);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.mode-accordion-toggle:hover {
+  border-color: var(--entity-red);
+  background: var(--bg-panel);
+}
+
+.mode-accordion-icon {
+  display: inline-block;
+  color: var(--entity-red);
+  transition: transform 0.2s ease;
+}
+
+.mode-accordion-toggle[aria-expanded="true"]
+  .mode-accordion-icon {
+  transform: rotate(90deg);
+}
+
+.mode-accordion-image {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.mode-accordion-content {
+  max-width: 540px;
+  margin: 14px auto 0;
+  padding: 18px 24px;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-panel);
+  box-shadow: var(--shadow-strong);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.mode-accordion-content p {
+  margin: 0 0 12px;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.mode-accordion-content ul {
+  width: fit-content;
+  margin: 0 auto;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.mode-accordion-content li + li {
+  margin-top: 6px;
+}
+
+/* =========================
    Buttons
    ========================= */
 

@@ -18,6 +18,26 @@
     </nav>
     <div class="challenge-heading">
       <h1>Adept Trials</h1>
+      <section class="mode-accordion">
+        <button class="mode-accordion-toggle" type="button" aria-expanded="false" aria-controls="how-to-play-content">
+          <img class="mode-accordion-image" src="images/icons/how-to-play.png" alt="How to Play" aria-hidden="true">
+          <span>How to Play</span>
+          <span class="mode-accordion-icon" aria-hidden="true">▸</span>
+        </button>
+        
+        <div class="mode-accordion-content" id="how-to-play-content" hidden>
+          <p>Work together to progress through the Survivor roster.</p>
+          <ul>
+            <li>Escape a Trial to advance to the next Survivor.</li>
+            <li>Being sacrificed costs you progress.</li>
+            <li>Three consecutive sacrifices ends the run.</li>
+            <li>Complete your Survivor column to become an Escapist.</li>
+            <li>Escapists may play as any Survivor, but must equip one unique perk from each remaining player's current Survivor and one unique perk from the Survivor they finished their column with.</li>
+            <li>As an Escapist, your goal is to help the remaining players escape and complete their columns.</li>
+            <li>Complete the Trial by having all four players become Escapists.</li>
+          </ul>
+        </div>
+      </section>
     </div>
   </header>
 
@@ -215,6 +235,7 @@
 
   <script src="data/survivors.js"></script>
   <script src="data/survivor-perks.js"></script>
+  <script src="js/script.js"></script>
   <script src="js/challenge.js"></script>
 
 </body>

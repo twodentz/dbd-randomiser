@@ -201,6 +201,59 @@ button:active {
 }
 
 /* =========================
+   Footer
+   ========================= */
+
+.app-footer {
+  margin-top: 48px;
+  padding: 24px 0 32px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.social-links a {
+  display: flex;
+  opacity: 0.6;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.social-links a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: invert(1);
+  opacity: 0.65;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.social-links a:hover img {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.copyright {
+  margin: 14px 0 0;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+/* =========================
    Utilities
    ========================= */
 

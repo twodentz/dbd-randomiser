@@ -1,0 +1,129 @@
+/* =========================
+   Home Header
+   ========================= */
+
+.home-tagline {
+  margin: 8px 0 0;
+
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  opacity: 0.7;
+}
+
+/* =========================
+   Home Layout
+   ========================= */
+
+.home-page {
+  width: min(90%, 1100px);
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.home-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* =========================
+   Home Options
+   ========================= */
+
+.home-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 420px;
+  padding: 32px;
+
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+
+  background: rgba(10, 10, 14, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.home-option:hover {
+  border-color: rgba(190, 35, 35, 0.8);
+  box-shadow: 0 0 24px rgba(190, 35, 35, 0.18);
+  transform: translateY(-4px);
+}
+
+.home-option-icon {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 24px;
+}
+
+.home-option h2 {
+  margin: 0 0 12px;
+
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-option p {
+  max-width: 360px;
+  margin: 0;
+
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+/* =========================
+   About
+   ========================= */
+
+.home-about {
+  max-width: 700px;
+  margin: 56px auto 0;
+
+  text-align: center;
+}
+
+.home-about h2 {
+  margin: 0 0 12px;
+
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.home-about p {
+  margin: 0;
+
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 700px) {
+  .home-options {
+    grid-template-columns: 1fr;
+  }
+
+  .home-option {
+    min-height: 340px;
+  }
+
+  .home-option-icon {
+    width: 140px;
+    height: 140px;
+  }
+}

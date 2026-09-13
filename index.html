@@ -1,197 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Dead by Daylight Randomiser</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/icons/favicon.png">
+  <title>The Campfire | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
+
 <body>
-  <div class="app">
-    <header class="app-header">
-      <h1>Dead by Daylight Randomiser</h1>
-    </header>
-
-    <div class="legendary-toggle">
-      <label class="legendary-label">
-        <input type="checkbox" id="toggle-legendary" checked />
-        <span class="custom-checkbox"></span>
-        <span class="label-text">Include Legendary Skins</span>
-      </label>
-      
-      <span class="legendary-info" tabindex="0">
-        ⓘ
-        <span class="tooltip">
-          Legendary characters are alternate versions or licensed skins
-          that share perks and gameplay with their base character.
-        </span>
-      </span>
-    </div>
-
-    <!-- Tabs -->
-    <nav class="tabs">
-      <button class="tab-btn active" data-tab="survivor-tab">Survivor</button>
-      <button class="tab-btn" data-tab="killer-tab">Killer</button>
+  <header class="app-header">
+    <nav class="app-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="randomiser.html">Chaos Shuffle</a>
+      <a href="challenge.html">Adept Trials</a>
     </nav>
+    <h1>The Campfire</h1>
+    <p class="home-tagline">Choose Your Trial</p>
+  </header>
 
-    <main class="tab-container">
-      <!-- Survivor Tab -->
-      <section id="survivor-tab" class="tab-content active">
-        <h2>Survivor Randomiser</h2>
+  <main class="home-page">
+    <section class="home-options">
+      <a class="home-option" href="randomiser.html">
+        <img class="home-option-icon" src="images/modes/chaos-shuffle.png" alt="Chaos Shuffle icon">
+        <h2>Chaos Shuffle</h2>
+        <p>Randomise Survivors, Killers, and perks.</p>
+      </a>
 
-        <div class="controls-row">
-          <button id="survivor-randomise-character">Randomise Survivor</button>
-          <button id="survivor-randomise-perks">Randomise Perks</button>
-          <button id="survivor-randomise-all">Randomise Everything</button>
-          <button id="survivor-reset">Reset</button>
-        </div>
+      <a class="home-option" href="challenge.html">
+        <img class="home-option-icon" src="images/modes/adept-trials.png" alt="Adept Trials icon">
+        <h2>Adept Trials</h2>
+        <p>Progress through Survivors in release order and escape the Entity.</p>
+      </a>
+    </section>
 
-        <div class="character-card">
-          <h3>Selected Survivor</h3>
-          <div class="character-info">
-            <img id="survivor-image" src="" alt="Survivor" class="character-image hidden" />
-            <p id="survivor-name" class="character-name">—</p>
-          </div>
-        </div>
+    <section class="home-about">
+      <h2>About The Campfire</h2>
+      <p>The Campfire is a collection of custom tools and challenges for Dead by Daylight. Shuffle your loadout with Chaos Shuffle, test your survival skills with your squad in the Adept Trials, and discover more ways to enter the Fog as new modes are added.</p>
+    </section>
+  </main>
 
-        <div class="perks-section">
-          <h3>Survivor Perks</h3>
-          <div class="perks-grid">
-            <!-- Perk 0 -->
-            <div class="perk-slot">
-              <img id="survivor-perk-img-0" class="perk-image hidden" alt="Perk 1" />
-              <p id="survivor-perk-name-0" class="perk-name">—</p>
-              <button class="perk-reroll-btn" data-type="survivor" data-index="0">
-                Reroll
-              </button>
-            </div>
-            <!-- Perk 1 -->
-            <div class="perk-slot">
-              <img id="survivor-perk-img-1" class="perk-image hidden" alt="Perk 2" />
-              <p id="survivor-perk-name-1" class="perk-name">—</p>
-              <button class="perk-reroll-btn" data-type="survivor" data-index="1">
-                Reroll
-              </button>
-            </div>
-            <!-- Perk 2 -->
-            <div class="perk-slot">
-              <img id="survivor-perk-img-2" class="perk-image hidden" alt="Perk 3" />
-              <p id="survivor-perk-name-2" class="perk-name">—</p>
-              <button class="perk-reroll-btn" data-type="survivor" data-index="2">
-                Reroll
-              </button>
-            </div>
-            <!-- Perk 3 -->
-            <div class="perk-slot">
-              <img id="survivor-perk-img-3" class="perk-image hidden" alt="Perk 4" />
-              <p id="survivor-perk-name-3" class="perk-name">—</p>
-              <button class="perk-reroll-btn" data-type="survivor" data-index="3">
-                Reroll
-              </button>
-            </div>
-          </div>
-
-          <button id="survivor-reroll-all-perks" class="reroll-all-btn">
-            Reroll All Perks
-          </button>
-        </div>
-      </section>
-
-      <!-- Killer Tab -->
-      <section id="killer-tab" class="tab-content">
-        <h2>Killer Randomise</h2>
-
-        <div class="controls-row">
-          <button id="killer-randomise-character">Randomise Killer</button>
-          <button id="killer-randomise-perks">Randomise Perks</button>
-          <button id="killer-randomise-all">Randomise Everything</button>
-          <button id="killer-reset">Reset</button>
-        </div>
-
-        <div class="character-card">
-          <h3>Selected Killer</h3>
-          <div class="character-info">
-            <img id="killer-image" src="" alt="Killer" class="character-image hidden" />
-            <p id="killer-name" class="character-name">—</p>
-          </div>
-        </div>
-
-        <div class="perks-section">
-          <h3>Killer Perks</h3>
-          <div class="perks-grid">
-            <!-- Perk 0 -->
-            <div class="perk-slot">
-              <img id="killer-perk-img-0" class="perk-image hidden" alt="Perk 1" />
-              <p id="killer-perk-name-0" class="perk-name">—</p>
-              <button class="perk-reroll-btn" data-type="killer" data-index="0">
-                Reroll
-              </button>
-            </div>
-            <!-- Perk 1 -->
-            <div class="perk-slot">
-              <img id="killer-perk-img-1" class="perk-image hidden" alt="Perk 2" />
-              <p id="killer-perk-name-1" class="perk-name">—</p>
-              <button class="perk-reroll-btn" data-type="killer" data-index="1">
-                Reroll
-              </button>
-            </div>
-            <!-- Perk 2 -->
-            <div class="perk-slot">
-              <img id="killer-perk-img-2" class="perk-image hidden" alt="Perk 3" />
-              <p id="killer-perk-name-2" class="perk-name">—</p>
-              <button class="perk-reroll-btn" data-type="killer" data-index="2">
-                Reroll
-              </button>
-            </div>
-            <!-- Perk 3 -->
-            <div class="perk-slot">
-              <img id="killer-perk-img-3" class="perk-image hidden" alt="Perk 4" />
-              <p id="killer-perk-name-3" class="perk-name">—</p>
-              <button class="perk-reroll-btn" data-type="killer" data-index="3">
-                Reroll
-              </button>
-            </div>
-          </div>
-
-          <button id="killer-reroll-all-perks" class="reroll-all-btn">
-            Reroll All Perks
-          </button>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <!-- Character Modal -->
-  <div id="character-modal" class="modal hidden">
-  <div class="modal-backdrop"></div>
-
-  <div class="character-modal-content">
-    <button id="character-modal-close" class="modal-close">✕</button>
-
-    <img id="character-modal-image" />
-    <h2 id="character-modal-name"></h2>
-    <p id="character-modal-chapter"></p>
-    <p id="character-modal-bio"></p>
-  </div>
-</div>
-
-  <!-- Perk Modal -->
-  <div id="perk-modal" class="modal hidden">
-  <div class="modal-backdrop"></div>
-
-  <div class="modal-content">
-    <button id="modal-close" class="modal-close">✕</button>
-
-    <img id="modal-perk-image" />
-    <h2 id="modal-perk-name"></h2>
-    <p id="modal-perk-owner" class="perk-owner"></p>
-    <p id="modal-perk-description"></p>
-  </div>
-</div>
-  <!-- Scripts -->
-  <script src="data/survivors.js"></script>
-  <script src="data/killers.js"></script>
-  <script src="data/survivor-perks.js"></script>
-  <script src="data/killer-perks.js"></script>
-  <script src="js/script.js"></script>
+  <footer class="app-footer">
+    <div class="social-links">
+      <a href="https://github.com/twodentz" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <img src="images/icons/socials/github.png" alt="GitHub">
+      </a>
+      
+      <a href="https://x.com/twodentz_" target="_blank" rel="noopener noreferrer" aria-label="X">
+        <img src="images/icons/socials/x.png" alt="X">
+      </a>
+      
+      <a href="https://www.instagram.com/twodentz_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <img src="images/icons/socials/instagram.png" alt="Instagram">
+      </a>
+      
+      <a href="https://www.youtube.com/@twodentz" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <img src="images/icons/socials/youtube.png" alt="YouTube">
+      </a>
+      
+      <a href="https://www.twitch.tv/2dentz" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
+        <img src="images/icons/socials/twitch.png" alt="Twitch">
+      </a>
+    </div>
+    <p class="copyright">© <span id="copyright-year"></span> The Campfire</p>
+  </footer>
+  <script>
+  document.querySelector("#copyright-year").textContent =
+    new Date().getFullYear();
+  </script>
 </body>
 </html>

@@ -63,6 +63,29 @@
   transform: translateY(-2px);
 }
 
+.challenge-player-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.challenge-hook-states {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.challenge-hook-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.2;
+}
+
+.challenge-hook-icon.is-active {
+  opacity: 1;
+}
+
 /* =========================
    Survivor Display
    ========================= */
@@ -105,22 +128,9 @@
   opacity: 0.5;
 }
 
-.challenge-player-card.has-sacrifice-warning
-.challenge-survivor-image {
-  filter:
-    sepia(1)
-    saturate(3)
-    hue-rotate(315deg)
-    brightness(0.9);
-}
-
-.challenge-player-card.has-sacrifice-danger
-  .challenge-survivor-image {
-  filter:
-    sepia(1)
-    saturate(6)
-    hue-rotate(315deg)
-    brightness(0.75);
+.challenge-player-card.is-sacrificed .challenge-survivor-image {
+  filter: grayscale(1);
+  opacity: 0.65;
 }
 
 /* =========================

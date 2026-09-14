@@ -126,6 +126,19 @@ function updatePlayerCard(playerIndex) {
   survivorImage.alt = survivor.name;
   survivorName.textContent = getChallengeSurvivorName(survivor);
 
+  const hookIcons = card.querySelectorAll(".challenge-hook-icon");
+  hookIcons.forEach((hookIcon, index) => {
+    hookIcon.classList.toggle(
+      "is-active",
+      index < player.consecutiveSacrifices
+    );
+  });
+
+  card.classList.toggle(
+    "is-sacrificed",
+    challengeState.failed && challengeState.failedPlayer === playerIndex
+  );
+
   // Rank
   const rank = getPlayerRank(player);
 
@@ -164,9 +177,6 @@ function updatePlayerCard(playerIndex) {
 
   // Finished State
   updateFinishedState(card, player);
-
-  // Sacrifice Warning
-  updateSacrificeWarning(card, player);
 }
 
 function updateFinishedState(card, player) {
@@ -179,11 +189,6 @@ function updateFinishedState(card, player) {
   resultButtons.forEach(button => {
     button.disabled = player.finished;
   });
-}
-
-function updateSacrificeWarning(card, player) {
-  card.classList.toggle("has-sacrifice-warning", player.consecutiveSacrifices === 1);
-  card.classList.toggle("has-sacrifice-danger", player.consecutiveSacrifices === 2);
 }
 
 // --------------------------------------------------
@@ -275,6 +280,7 @@ function handleSacrifice(playerIndex) {
   if (player.consecutiveSacrifices >= MAX_CONSECUTIVE_SACRIFICES) {
     challengeState.failed = true;
     challengeState.failedPlayer = playerIndex;
+    updatePlayerCard(playerIndex);
     updateChallengeFailure();
     return;
   }

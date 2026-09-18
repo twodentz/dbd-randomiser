@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/icons/favicon.png">
+  <title>The Campfire | Adept Trials</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/challenge.css">
+</head>
+
+<body>
+  <header class="app-header">
+    <nav class="app-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="randomiser.html">Chaos Shuffle</a>
+      <a href="challenge.html" aria-current="page">Adept Trials</a>
+    </nav>
+    <div class="challenge-heading">
+      <h1>Adept Trials</h1>
+      <div class="mode-accordions">
+        <section class="mode-accordion">
+          <button class="mode-accordion-toggle" type="button" aria-expanded="false" aria-controls="how-to-play-content">
+            <img class="mode-accordion-image" src="images/icons/how-to-play.png" alt="How to Play" aria-hidden="true">
+            <span>How to Play</span>
+            <span class="mode-accordion-icon" aria-hidden="true">▸</span>
+          </button>
+          
+          <div class="mode-accordion-content" id="how-to-play-content" hidden>
+            <p>Work together to progress through the Survivor roster.</p>
+            <ul>
+              <li>Escape a Trial to advance to the next Survivor.</li>
+              <li>Being sacrificed costs you progress.</li>
+              <li>Three consecutive sacrifices ends the run.</li>
+              <li>Complete your Survivor column to become an Escapist.</li>
+              <li>Escapists may play as any Survivor, but must equip one unique perk from each remaining player's current Survivor and one unique perk from the Survivor they finished their column with.</li>
+              <li>As an Escapist, your goal is to help the remaining players escape and complete their columns.</li>
+              <li>Complete the Trial by having all four players become Escapists.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="mode-accordion">
+          <button class="mode-accordion-toggle" type="button" aria-expanded="false" aria-controls="options-content">
+            <img class="mode-accordion-image" src="images/icons/options.png" alt="Options" aria-hidden="true">
+            <span>Options</span>
+            <span class="mode-accordion-icon" aria-hidden="true">▸</span>
+          </button>
+          
+          <div class="mode-accordion-content" id="options-content" hidden>
+            <label class="custom-checkbox-label mode-option">
+              <input type="checkbox" id="randomise-survivor-columns">
+              <span class="custom-checkbox" aria-hidden="true"></span>
+              <span class="mode-option-text">
+                <strong>Randomise Survivor Columns</strong>
+                <small>Shuffle the Survivor roster between all four players.</small>
+              </span>
+            </label>
+          </div>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <main class="challenge-page">
+    <section class="challenge-player-setup" aria-label="Player names">
+      <h2 class="challenge-player-setup-title">Players</h2>
+      <p class="challenge-player-setup-description">Players are randomly assigned to Survivor columns when the Trial begins.</p>
+
+      <input class="challenge-player-name-input" type="text" placeholder="Player 1" maxlength="16" autocomplete="off" aria-label="Player 1 name">
+      
+      <input class="challenge-player-name-input" type="text" placeholder="Player 2" maxlength="16" autocomplete="off" aria-label="Player 2 name">
+      
+      <input class="challenge-player-name-input" type="text" placeholder="Player 3" maxlength="16" autocomplete="off" aria-label="Player 3 name">
+      
+      <input class="challenge-player-name-input" type="text" placeholder="Player 4" maxlength="16" autocomplete="off" aria-label="Player 4 name">
+    </section>
+
+    <section class="challenge-grid">
+
+      <!-- Player 1 -->
+      <article class="challenge-player-card" data-player="0">
+        <div class="challenge-player-header">
+          <div class="challenge-player-status">
+            <span class="challenge-player-label">Player 1</span>
+            <div class="challenge-hook-states" aria-label="Consecutive sacrifices">
+              <img class="challenge-hook-icon" src="images/icons/hook.png" alt="">
+              <img class="challenge-hook-icon" src="images/icons/hook.png" alt="">
+              <img class="challenge-hook-icon" src="images/icons/hook.png" alt="">
+            </div>
+          </div>
+          
+          <div class="challenge-player-rank">
+            <img class="challenge-rank-icon" src="images/ranks/bronze.png" alt="Rank emblem">
+            <span class="challenge-rank-number">—</span>
+          </div>
+        </div>
+
+        <div class="challenge-survivor">
+          <img class="challenge-survivor-image" src="images/placeholders/character.png" alt="Player 1 Survivor">
+          <div class="challenge-perks">
+            <button class="challenge-perk" type="button">
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
+            </button>
+
+            <button class="challenge-perk" type="button">
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
+            </button>
+
+            <button class="challenge-perk" type="button">
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
+            </button>
+          </div>
+        </div>
+
+        <h2 class="challenge-survivor-name">Survivor</h2>
+        <p class="challenge-finished-label">ESCAPED</p>
+
+        <div class="challenge-result-buttons">
+          <button class="challenge-result-btn challenge-escape-btn" type="button">
+            <img class="challenge-result-icon" src="images/icons/escape-icon.png" alt="">
+            <span>Escape</span>
+          </button>
+
+          <button class="challenge-result-btn challenge-sacrifice-btn" type="button">
+            <img class="challenge-result-icon" src="images/icons/sacrifice-icon.png" alt="">
+            <span>Sacrifice</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- Player 2 -->
+      <article class="challenge-player-card" data-player="1">
+        <div class="challenge-player-header">
+          <div class="challenge-player-status">
+            <span class="challenge-player-label">Player 2</span>
+            <div class="challenge-hook-states" aria-label="Consecutive sacrifices">
+              <img class="challenge-hook-icon" src="images/icons/hook.png" alt="">
+              <img class="challenge-hook-icon" src="images/icons/hook.png" alt="">
+              <img class="challenge-hook-icon" src="images/icons/hook.png" alt="">
+            </div>
+          </div>
+          
+          <div class="challenge-player-rank">
+            <img class="challenge-rank-icon" src="images/ranks/bronze.png" alt="Rank emblem">
+            <span class="challenge-rank-number">—</span>
+          </div>
+        </div>
+
+        <div class="challenge-survivor">
+          <img class="challenge-survivor-image" src="images/placeholders/character.png" alt="Player 2 Survivor">
+          <div class="challenge-perks">
+            <button class="challenge-perk" type="button">
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
+            </button>
+
+            <button class="challenge-perk" type="button">
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
+            </button>
+
+            <button class="challenge-perk" type="button">
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
+            </button>
+          </div>
+        </div>
+
+        <h2 class="challenge-survivor-name">Survivor</h2>
+        <p class="challenge-finished-label">ESCAPED</p>
+
+        <div class="challenge-result-buttons">
+          <button class="challenge-result-btn challenge-escape-btn" type="button">
+            <img class="challenge-result-icon" src="images/icons/escape-icon.png" alt="">
+            <span>Escape</span>
+          </button>
+
+          <button class="challenge-result-btn challenge-sacrifice-btn" type="button">
+            <img class="challenge-result-icon" src="images/icons/sacrifice-icon.png" alt="">
+            <span>Sacrifice</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- Player 3 -->
+      <article class="challenge-player-card" data-player="2">
+        <div class="challenge-player-header">
+          <div class="challenge-player-status">
+            <span class="challenge-player-label">Player 3</span>
+            <div class="challenge-hook-states" aria-label="Consecutive sacrifices">
+              <img class="challenge-hook-icon" src="images/icons/hook.png" alt="">
+              <img class="challenge-hook-icon" src="images/icons/hook.png" alt="">
+              <img class="challenge-hook-icon" src="images/icons/hook.png" alt="">
+            </div>
+          </div>
+          
+          <div class="challenge-player-rank">
+            <img class="challenge-rank-icon" src="images/ranks/bronze.png" alt="Rank emblem">
+            <span class="challenge-rank-number">—</span>
+          </div>
+        </div>
+
+        <div class="challenge-survivor">
+          <img class="challenge-survivor-image" src="images/placeholders/character.png" alt="Player 3 Survivor">
+          <div class="challenge-perks">
+            <button class="challenge-perk" type="button">
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
+            </button>
+
+            <button class="challenge-perk" type="button">
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
+            </button>
+
+            <button class="challenge-perk" type="button">
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
+            </button>
+          </div>
+        </div>
+
+        <h2 class="challenge-survivor-name">Survivor</h2>
+        <p class="challenge-finished-label">ESCAPED</p>
+
+        <div class="challenge-result-buttons">
+          <button class="challenge-result-btn challenge-escape-btn" type="button">
+            <img class="challenge-result-icon" src="images/icons/escape-icon.png" alt="">
+            <span>Escape</span>
+          </button>
+
+          <button class="challenge-result-btn challenge-sacrifice-btn" type="button">
+            <img class="challenge-result-icon" src="images/icons/sacrifice-icon.png" alt="">
+            <span>Sacrifice</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- Player 4 -->
+      <article class="challenge-player-card" data-player="3">
+        <div class="challenge-player-header">
+          <div class="challenge-player-status">
+            <span class="challenge-player-label">Player 4</span>
+            <div class="challenge-hook-states" aria-label="Consecutive sacrifices">
+              <img class="challenge-hook-icon" src="images/icons/hook.png" alt="">
+              <img class="challenge-hook-icon" src="images/icons/hook.png" alt="">
+              <img class="challenge-hook-icon" src="images/icons/hook.png" alt="">
+            </div>
+          </div>
+          
+          <div class="challenge-player-rank">
+            <img class="challenge-rank-icon" src="images/ranks/bronze.png" alt="Rank emblem">
+            <span class="challenge-rank-number">—</span>
+          </div>
+        </div>
+
+        <div class="challenge-survivor">
+          <img class="challenge-survivor-image" src="images/placeholders/character.png" alt="Player 4 Survivor">
+
+          <div class="challenge-perks">
+            <button class="challenge-perk" type="button">
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
+            </button>
+
+            <button class="challenge-perk" type="button">
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
+            </button>
+
+            <button class="challenge-perk" type="button">
+              <img src="images/placeholders/perk.png" alt="Survivor perk">
+            </button>
+          </div>
+        </div>
+
+        <h2 class="challenge-survivor-name">Survivor</h2>
+        <p class="challenge-finished-label">ESCAPED</p>
+
+        <div class="challenge-result-buttons">
+          <button class="challenge-result-btn challenge-escape-btn" type="button">
+            <img class="challenge-result-icon" src="images/icons/escape-icon.png" alt="">
+            <span>Escape</span>
+          </button>
+
+          <button class="challenge-result-btn challenge-sacrifice-btn" type="button">
+            <img class="challenge-result-icon" src="images/icons/sacrifice-icon.png" alt="">
+            <span>Sacrifice</span>
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <section class="challenge-complete" hidden>
+      <h2>CHALLENGE COMPLETE</h2>
+      <p>All players escaped the Entity.</p>
+    </section>
+
+    <section class="challenge-failure" hidden>
+      <h2>TRIAL FAILED</h2>
+      <p class="challenge-failure-message"></p>
+    </section>
+
+    <section class="challenge-controls">
+      <button id="challenge-start" type="button">Start Challenge</button>
+      <button id="challenge-reset" type="button">Reset Challenge</button>
+    </section>
+  </main>
+
+  <script src="data/survivors.js"></script>
+  <script src="data/survivor-perks.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/challenge.js"></script>
+
+</body>
+</html>

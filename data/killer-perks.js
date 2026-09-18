@@ -233,7 +233,10 @@ const killerPerks = [
     name: "Deadlock",
     image: "images/perks/killer/deadlock.png",
     owner: "The Cenobite",
-    description: ``,
+    description: `Each time a Generator is completed, Deadlock calls upon The Entity for the following effects:
+        
+    • Blocks the Generator with the most Progression for 15/20/25 seconds.
+    • The Aura of the Blocked Generator is highlighted to you in white.`,
     licensed: true,
     license: "Hellraiser",
     variants: [
@@ -241,6 +244,10 @@ const killerPerks = [
         id: "noHoldsBarred",
         name: "No Holds Barred",
         image: "images/perks/killer/noHoldsBarred.png",
+        description: `Each time a Generator is completed, No Holds Barred calls upon The Entity for the following effects:
+        
+        • Blocks the Generator with the most Progression for 15/20/25 seconds.
+        • The Aura of the Blocked Generator is highlighted to you in white.`,
         licensed: false
       }
     ]
@@ -301,9 +308,28 @@ const killerPerks = [
     name: "Dying Light",
     image: "images/perks/killer/dyingLight.png",
     owner: "The Shape",
-    description: ``,
+    description: `Each time you hook a Survivor other than your Obsession, you gain +1 Token:
+    
+    • For as long as the Obsession is alive, all other Survivors suffer from a stack-able 2/2.5/3 % per Token Action Speed penalty to Repairing, Healing, and Sabotaging, up to a maximum of 22/27.5/33 % or 11 Tokens.
+    • The Obsession is unaffected by this penalty and instead granted a permanent +33 % Action Speed bonus to Unhooking and Healing other Survivors.
+
+    You can only be obsessed with one Survivor at a time.`,
     licensed: true,
-    license: "Halloween"
+    license: "Halloween",
+    variants: [
+      {
+        id: "cullTheWeak",
+        name: "Cull the Weak",
+        image: "images/perks/killer/cullTheWeak.png",
+        description: `Each time you hook a Survivor other than your Obsession, you gain +1 Token:
+        
+        • For as long as the Obsession is alive, all other Survivors suffer from a stack-able 2/2.5/3 % per Token Action Speed penalty to Repairing, Healing, and Sabotaging, up to a maximum of 22/27.5/33 % or 11 Tokens.
+        • The Obsession is unaffected by this penalty and instead granted a permanent +33 % Action Speed bonus to Unhooking and Healing other Survivors.
+
+        You can only be obsessed with one Survivor at a time.`,
+        licensed: false
+      }
+    ]
   },
   {
     id: "enduring",
@@ -504,7 +530,16 @@ const killerPerks = [
     name: "Hex: Plaything",
     image: "images/perks/killer/hexPlaything.png",
     owner: "The Cenobite",
-    description: ``,
+    description: `If there is still a Dull Totem in the environment, Hex: Plaything lights a Hex Totem whenever you hook a Survivor for the first time, cursing them with its Hex Effects.
+        
+    • Inflicts the Oblivious Status Effect.
+    • Blocks the Hex Totem for all other Survivors for 90 seconds.
+        Blocked Hex Totems cannot be cleansed or blessed by Survivors.
+        This does not affect the Cursed Survivor.
+            
+    The Aura of the Hex Totem is revealed to the Cursed Survivor within 24/20/16 metres.
+        
+    The Hex Effects persist until the Hex Totem is either blessed or cleansed by a Survivor, disabling it for the remainder of the Trial.`,
     licensed: true,
     license: "Hellraiser",
     variants: [
@@ -512,6 +547,16 @@ const killerPerks = [
         id: "hexFortunesFool",
         name: "Hex: Fortune's Fool",
         image: "images/perks/killer/hexFortunesFool.png",
+        description: `If there is still a Dull Totem in the environment, Hex: Fortune's Fool lights a Hex Totem whenever you hook a Survivor for the first time, cursing them with its Hex Effects.
+        
+        • Inflicts the Oblivious Status Effect.
+        • Blocks the Hex Totem for all other Survivors for 90 seconds.
+            Blocked Hex Totems cannot be cleansed or blessed by Survivors.
+            This does not affect the Cursed Survivor.
+            
+        The Aura of the Hex Totem is revealed to the Cursed Survivor within 24/20/16 metres.
+        
+        The Hex Effects persist until the Hex Totem is either blessed or cleansed by a Survivor, disabling it for the remainder of the Trial.`,
         licensed: false
       }
     ]
@@ -794,9 +839,34 @@ const killerPerks = [
     name: "Play with Your Food",
     image: "images/perks/killer/playWithYourFood.png",
     owner: "The Shape",
-    description: ``,
+    description: `Losing your Obsession in a chase causes Play with Your Food to gain +1 Token, up to a maximum of 3 Tokens, and performing a Basic or Special Attack with the potential to damage a Survivor causes it to lose -1 Token.
+    
+    While having at least 1 Token, you benefit from the following effect:
+    
+    • Grants a stack-able 3/4/5 % Haste Status Effect per Token, up to a maximum of 9/12/15 %.
+        
+    Play with Your Food has a cool-down of 10 seconds between gaining additional Tokens.
+        
+    You can only be obsessed with one Survivor at a time.`,
     licensed: true,
-    license: "Halloween"
+    license: "Halloween",
+    variants: [
+      {
+        id: "seeHowTheyRun",
+        name: "See How They Run",
+        image: "images/perks/killer/cullTheWeak.png",
+        description: `Losing your Obsession in a chase causes See How They Run to gain +1 Token, up to a maximum of 3 Tokens, and performing a Basic or Special Attack with the potential to damage a Survivor causes it to lose -1 Token.
+        
+        While having at least 1 Token, you benefit from the following effect:
+        
+        • Grants a stack-able 3/4/5 % Haste Status Effect per Token, up to a maximum of 9/12/15 %.
+        
+        See How They Run has a cool-down of 10 seconds between gaining additional Tokens.
+        
+        You can only be obsessed with one Survivor at a time.`,
+        licensed: false
+      }
+    ]
   },
   {
     id: "popGoesTheWeasel",
@@ -849,9 +919,34 @@ const killerPerks = [
     name: "Save the Best for Last",
     image: "images/perks/killer/saveTheBestForLast.png",
     owner: "The Shape",
-    description: ``,
+    description: `Damaging any Survivor other than the Obsession with a Basic Attack causes Save the Best for Last to gain +1 Token, up to a maximum of 6/7/8 Tokens.
+    
+    Damaging the Obsession with either a Basic or Special Attack causes Save the Best for Last to lose -2 Tokens:
+        
+    • Grants a stack-able -5 % per Token Cool-down time reduction on successful Basic Attacks, up to a maximum of 30/35/40 %.
+        
+    Save the Best for Last freezes its current Token Count once the Obsession is sacrificed or killed.
+        
+    You can only be obsessed with one Survivor at a time.`,
     licensed: true,
-    license: "Halloween"
+    license: "Halloween",
+    variants: [
+      {
+        id: "keepThemWaiting",
+        name: "Keep Them Waiting",
+        image: "images/perks/killer/keepThemWaiting.png",
+        description: `Damaging any Survivor other than the Obsession with a Basic Attack causes Keep Them Waiting to gain +1 Token, up to a maximum of 6/7/8 Tokens.
+        
+        Damaging the Obsession with either a Basic or Special Attack causes Keep Them Waiting to lose -2 Tokens:
+        
+        • Grants a stack-able -5 % per Token Cool-down time reduction on successful Basic Attacks, up to a maximum of 30/35/40 %.
+        
+        Keep Them Waiting freezes its current Token Count once the Obsession is sacrificed or killed.
+        
+        You can only be obsessed with one Survivor at a time.`,
+        licensed: false
+      }
+    ]
   },
   {
     id: "scourgeHookFloodsOfRage",
@@ -867,7 +962,17 @@ const killerPerks = [
     name: "Scourge Hook: Gift of Pain",
     image: "images/perks/killer/scourgeHookGiftOfPain.png",
     owner: "The Cenobite",
-    description: ``,
+    description: `At the start of the Trial, 4 Hooks in the environment are changed into Scourge Hooks:
+    
+    • The Auras of these Scourge Hooks are highlighted in white.
+        
+    Each time a Survivor is unhooked from a Scourge Hook, the following effects apply:
+        
+    • Causes that Survivor to suffer from the Haemorrhage Status Effect for 90 seconds.
+        
+    After the first time that Survivor is healed back to full health, they suffer from the following effect until they are injured again by any means:
+        
+    • Reduces their Action speeds for Healing and Repairing by 10/13/16 %.`,
     licensed: true,
     license: "Hellraiser",
     variants: [
@@ -875,6 +980,17 @@ const killerPerks = [
         id: "scourgeHookWeepingWounds",
         name: "Scourge Hook: Weeping Wounds",
         image: "images/perks/killer/scourgeHookWeepingWounds.png",
+        description: `At the start of the Trial, 4 Hooks in the environment are changed into Scourge Hooks:
+        
+        • The Auras of these Scourge Hooks are highlighted in white.
+        
+        Each time a Survivor is unhooked from a Scourge Hook, the following effects apply:
+        
+        • Causes that Survivor to suffer from the Haemorrhage Status Effect for 90 seconds.
+        
+        After the first time that Survivor is healed back to full health, they suffer from the following effect until they are injured again by any means:
+        
+        • Reduces their Action speeds for Healing and Repairing by 10/13/16 %.`,
         licensed: false
       }
     ]
@@ -1114,5 +1230,108 @@ const killerPerks = [
     image: "images/perks/killer/zanshinTactics.png",
     owner: "The Oni",
     description: ``
-  }
+  },
+  {
+    id: "hexHiveMind",
+    name: "Hex: Hive Mind",
+    image: "images/perks/killer/hexHiveMind.png",
+    owner: "The First",
+    description: `The first time you hook any Survivor, a random Dull Totem becomes a Hex Totem, provided that a Dull Totem remains in the Trial Grounds.
+    
+    Generators are highlighted; the intensity of the generator's Auras reveals their repair progress.
+
+    As soon as a total of 4 generators have been completed in the Trial:
+
+    • All remaining generators explode, lose 6/8/10 % progess, and start regressing.
+    • The associated Hex Totem becomes dull, and this perk becomes disabled for the remainder of the trial.
+    
+    The Hex Effects persist until the Hex Totem is either blessed or cleansed by a Survivor, disabling it for the remainder of the Trial.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "secretProject",
+    name: "Secret Project",
+    image: "images/perks/killer/secretProject.png",
+    owner: "The First",
+    description: `Whenever a Totem is blessed or cleansed, a random unblocked generator becomes blocked for 20/25/30 seconds.
+    
+    Whenever any number of Generators become blocked, you gain Undetectable Status Effect for 30 seconds.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "turnBackTheClock",
+    name: "Turn Back the Clock",
+    image: "images/perks/killer/turnBackTheClock.png",
+    owner: "The First",
+    description: `After hooking a Survivor, for 40/50/60 seconds, press the Active Ability button to make a target generator within 20 meters explode, lose -10 % progress, and start regressing.`,
+    licensed: true,
+    license: "Stranger Things"
+  },
+  {
+    id: "hexScaredToDeath",
+    name: "Hex: Scared to Death",
+    image: "images/perks/killer/hexScaredToDeath.png",
+    owner: "The Slasher",
+    description: `When you Hook 3 different Survivors, Hex: Scared to Death activates on a random Dull Totem and triggers its effect:
+
+    • Basic-breaking a Pallet during a chase causes all Survivors within 13 metres to scream and gain 11/12/13 % Hindered Status Effect for 3 seconds.
+    
+    The Hex Effects persist until the Hex Totem is either blessed or cleansed by a Survivor, disabling it for the remainder of the Trial.`,
+    licensed: true,
+    license: "Friday the 13th"
+  },
+  {
+    id: "rampage",
+    name: "Rampage",
+    image: "images/perks/killer/rampage.png",
+    owner: "The Slasher",
+    description: `Whenever you basic-break a Pallet or a Breakable Wall, gain a token, up to 13
+
+    • Whenever you are blinded or Pallet-stunned, you are granted 1 % Haste Status Effect for each Token this perk has for 13 seconds.
+    
+    This perk has a cool-down of 30/25/20 seconds after being blinded or Pallet-stunned.`,
+    licensed: true,
+    license: "Friday the 13th"
+  },
+  {
+    id: "silentShadow",
+    name: "Silent Shadow",
+    image: "images/perks/killer/silentShadow.png",
+    owner: "The Slasher",
+    description: `When you hook a Survivor, you are granted Undetectable Status Effect for 11/12/13 seconds.
+    
+    When the Exit Gates are powered, you are granted Undetectable for the rest of the Trial.`,
+    licensed: true,
+    license: "Friday the 13th"
+  },
+  {
+    id: "celestialWitness",
+    name: "Celestial Witness",
+    image: "images/perks/killer/celestialWitness.png",
+    owner: "The Judgment",
+    description: `Every 30 seconds, if the Obsession is 40 metres away from you, you see their aura for 2/2.5/3 seconds. Otherwise, the farthest Survivor becomes the Obsession.`,
+  },
+  {
+    id: "hexUnderYourThumb",
+    name: "Hex: Under Your Thumb",
+    image: "images/perks/killer/hexUnderYourThumb.png",
+    owner: "The Judgment",
+    description: `When a Survivor gains a Hook State, Hex: Under Your Thumb activates on a random Dull Totem:
+
+    • Running Survivors cannot gain more than 25/20/15 % Haste at once.
+    • Whenever a running Survivor within 32 metres gains Haste, the Survivor's location is revealed to you for 4 seconds.
+    
+    The Hex Effects persist until the Hex Totem is either blessed or cleansed by a Survivor, disabling it for the remainder of the Trial.`,
+  },
+  {
+    id: "layWaste",
+    name: "Lay Waste",
+    image: "images/perks/killer/layWaste.png",
+    owner: "The Judgment",
+    description: `Damaging a Generator makes it regress +2 % faster for each Charge it has.
+    
+    This perk has a cool-down of 55/50/45 seconds after damaging a Generator.`,
+  },
 ];

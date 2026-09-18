@@ -365,7 +365,6 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(135deg, var(--entity-red), var(--entity-red-soft));
   border-color: var(--entity-red);
   box-shadow: 0 0 10px rgba(216, 52, 44, 0.7);
   transform: translateY(-1px);

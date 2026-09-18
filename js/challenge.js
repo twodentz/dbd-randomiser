@@ -14,17 +14,32 @@ const completeSurvivorCount =
 
 const challengeSurvivors = baseSurvivors.slice(0, completeSurvivorCount);
 
-const survivorColumns = Array.from(
-  { length: PLAYER_COUNT },
-  () => []
-);
+function createSurvivorColumns(survivorList) {
+  const columns = Array.from(
+    { length: PLAYER_COUNT },
+    () => []
+  );
 
-// Distribute Survivors across four columns in release order.
-challengeSurvivors.forEach((survivor, index) => {
-  const columnIndex = index % PLAYER_COUNT;
+  survivorList.forEach((survivor, index) => {
+    const columnIndex = index % PLAYER_COUNT;
 
-  survivorColumns[columnIndex].push(survivor);
-});
+    columns[columnIndex].push(survivor);
+  });
+
+  return columns;
+}
+
+function shuffleArray(list) {
+  const shuffled = [...list];
+
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+let survivorColumns = createSurvivorColumns(challengeSurvivors);
 
 // --------------------------------------------------
 // Challenge State
@@ -205,9 +220,13 @@ function updateChallengeDisplay() {
 function updateChallengeControls() {
   const startButton = document.querySelector("#challenge-start");
   const resetButton = document.querySelector("#challenge-reset");
+  const randomiseColumnsOption = document.querySelector(
+    "#randomise-survivor-columns"
+  );
 
   startButton.disabled = challengeState.started;
   resetButton.disabled = !challengeState.started;
+  randomiseColumnsOption.disabled = challengeState.started;
 }
 
 function updateChallengeCompletion() {
@@ -281,6 +300,24 @@ function handleSacrifice(playerIndex) {
 
 function startChallenge() {
   if (challengeState.started) return;
+
+  const randomiseColumns = document.querySelector(
+    "#randomise-survivor-columns"
+  ).checked;
+
+  if (randomiseColumns) {
+  const shuffledSurvivors = shuffleArray(baseSurvivors);
+
+  const completeRandomSurvivorCount =
+    Math.floor(shuffledSurvivors.length / PLAYER_COUNT) * PLAYER_COUNT;
+
+  const randomChallengeSurvivors =
+    shuffledSurvivors.slice(0, completeRandomSurvivorCount);
+
+  survivorColumns = createSurvivorColumns(randomChallengeSurvivors);
+} else {
+  survivorColumns = createSurvivorColumns(challengeSurvivors);
+}
 
   challengeState.started = true;
 

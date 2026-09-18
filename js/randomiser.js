@@ -106,25 +106,6 @@ function getRandomUniquePerks(pool, count = 4) {
    Modal Display
    ========================= */
 
-function openPerkModal(perk) {
-  if (!perk) return;
-
-  modalImage.src = perk.image;
-  modalName.textContent = perk.name;
-  modalDesc.textContent =
-    perk.description || "No description available.";
-
-  modalOwner.textContent = perk.owner
-    ? `${perk.owner} Unique Perk`
-    : "";
-
-  perkModal.classList.remove("hidden");
-}
-
-function closePerkModal() {
-  perkModal.classList.add("hidden");
-}
-
 function openCharacterModal(character) {
   characterModalImage.src = character.image;
   characterModalName.textContent = character.name;
@@ -456,14 +437,6 @@ function setupEventListeners() {
     });
   });
 
-  // Perk modal
-  perkModalClose.addEventListener("click", closePerkModal);
-  perkModalBackdrop.addEventListener("click", closePerkModal);
-
-  perkModalContent.addEventListener("click", (event) => {
-    event.stopPropagation();
-  });
-
   // Character modal
   characterModalClose.addEventListener(
     "click",
@@ -479,7 +452,6 @@ function setupEventListeners() {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       closeCharacterModal();
-      closePerkModal();
     }
   });
 

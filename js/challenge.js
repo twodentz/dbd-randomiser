@@ -52,6 +52,7 @@ const challengeState = {
   failedPlayer: null,
   players: survivorColumns.map((column, index) => ({
     player: index,
+    name: `Player ${index + 1}`,
     column: index,
     position: 0,
     consecutiveSacrifices: 0,
@@ -128,6 +129,12 @@ function updatePlayerCard(playerIndex) {
   );
 
   if (!card) return;
+
+  const playerLabel = card.querySelector(
+    ".challenge-player-label"
+  );
+
+  playerLabel.textContent = player.name;
 
   // Survivor
   const survivorImage = card.querySelector(
@@ -223,10 +230,16 @@ function updateChallengeControls() {
   const randomiseColumnsOption = document.querySelector(
     "#randomise-survivor-columns"
   );
+  const playerNameInputs = document.querySelectorAll(
+  ".challenge-player-name-input"
+  );
 
   startButton.disabled = challengeState.started;
   resetButton.disabled = !challengeState.started;
   randomiseColumnsOption.disabled = challengeState.started;
+  playerNameInputs.forEach(input => {
+    input.disabled = challengeState.started;
+  });
 }
 
 function updateChallengeCompletion() {
@@ -241,7 +254,9 @@ function updateChallengeFailure(){
   failure.hidden = !challengeState.failed;
 
   if (challengeState.failed && challengeState.failedPlayer !== null) {
-    failureMessage.textContent = `Player ${challengeState.failedPlayer + 1} was sacrificed to the Entity`;
+    const failedPlayer = challengeState.players[challengeState.failedPlayer];
+
+    failureMessage.textContent = `${failedPlayer.name} was sacrificed to the Entity`;
   }
 }
 
@@ -301,6 +316,21 @@ function handleSacrifice(playerIndex) {
 function startChallenge() {
   if (challengeState.started) return;
 
+  const playerNameInputs = document.querySelectorAll(
+    ".challenge-player-name-input"
+  );
+
+  const playerNames = Array.from(playerNameInputs, (input, index) => {
+    const name = input.value.trim();
+    return name || `Player ${index + 1}`;
+  });
+
+  const shuffledPlayerNames = shuffleArray(playerNames);
+
+  challengeState.players.forEach((player, index) => {
+    player.name = shuffledPlayerNames[index];
+  });
+
   const randomiseColumns = document.querySelector(
     "#randomise-survivor-columns"
   ).checked;
@@ -331,11 +361,20 @@ function resetChallenge() {
   challengeState.failed = false;
   challengeState.failedPlayer = null;
 
-  challengeState.players.forEach(player => {
+  challengeState.players.forEach((player, index) => {
+    player.name = `Player ${index + 1}`;
     player.position = 0;
     player.consecutiveSacrifices = 0;
     player.finished = false;
     player.finishingSurvivor = null;
+  });
+
+  const playerNameInputs = document.querySelectorAll(
+    ".challenge-player-name-input"
+  );
+
+  playerNameInputs.forEach(input => {
+    input.value = "";
   });
 
   updateChallengeDisplay();

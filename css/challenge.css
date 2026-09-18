@@ -15,6 +15,64 @@
 }
 
 /* =========================
+   Player Setup
+   ========================= */
+
+.challenge-player-setup {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.challenge-player-setup-title {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+}
+
+.challenge-player-setup-description {
+  grid-column: 1 / -1;
+  margin: -4px 0 0;
+  color: #a0a0a0;
+  font-size: 0.75rem;
+}
+
+.challenge-player-name-input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  background: rgba(10, 10, 12, 0.9);
+  color: #f2f2f2;
+  border: 1px solid #3c3c3c;
+  border-radius: 4px;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  outline: none;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.challenge-player-name-input::placeholder {
+  color: #777;
+}
+
+.challenge-player-name-input:focus {
+  border-color: #d8342c;
+  box-shadow: 0 0 8px rgba(216, 52, 44, 0.4);
+}
+
+.challenge-player-name-input:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* =========================
    Player Cards
    ========================= */
 
@@ -258,6 +316,9 @@
   .challenge-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .challenge-player-setup {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 600px) {
@@ -267,5 +328,9 @@
 
   .challenge-grid {
     grid-template-columns: 1fr;
+  }
+
+  .challenge-player-setup {
+  grid-template-columns: 1fr;
   }
 }

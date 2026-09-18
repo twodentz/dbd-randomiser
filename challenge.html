@@ -63,6 +63,19 @@
   </header>
 
   <main class="challenge-page">
+    <section class="challenge-player-setup" aria-label="Player names">
+      <h2 class="challenge-player-setup-title">Players</h2>
+      <p class="challenge-player-setup-description">Players are randomly assigned to Survivor columns when the Trial begins.</p>
+
+      <input class="challenge-player-name-input" type="text" placeholder="Player 1" maxlength="16" autocomplete="off" aria-label="Player 1 name">
+      
+      <input class="challenge-player-name-input" type="text" placeholder="Player 2" maxlength="16" autocomplete="off" aria-label="Player 2 name">
+      
+      <input class="challenge-player-name-input" type="text" placeholder="Player 3" maxlength="16" autocomplete="off" aria-label="Player 3 name">
+      
+      <input class="challenge-player-name-input" type="text" placeholder="Player 4" maxlength="16" autocomplete="off" aria-label="Player 4 name">
+    </section>
+
     <section class="challenge-grid">
 
       <!-- Player 1 -->
@@ -277,7 +290,7 @@
     </section>
 
     <section class="challenge-failure" hidden>
-      <h2>TRAIL FAILED</h2>
+      <h2>TRIAL FAILED</h2>
       <p class="challenge-failure-message"></p>
     </section>
 

@@ -31,6 +31,7 @@ challengeSurvivors.forEach((survivor, index) => {
 // --------------------------------------------------
 
 const challengeState = {
+  started: false,
   completed: false,
   failed: false,
   failedPlayer: null,
@@ -187,7 +188,7 @@ function updateFinishedState(card, player) {
   );
 
   resultButtons.forEach(button => {
-    button.disabled = player.finished;
+    button.disabled = !challengeState.started || challengeState.completed || challengeState.failed || player.finished;
   });
 }
 
@@ -201,37 +202,24 @@ function updateChallengeDisplay() {
   });
 }
 
+function updateChallengeControls() {
+  const startButton = document.querySelector("#challenge-start");
+  const resetButton = document.querySelector("#challenge-reset");
+
+  startButton.disabled = challengeState.started;
+  resetButton.disabled = !challengeState.started;
+}
+
 function updateChallengeCompletion() {
   const completion = document.querySelector(".challenge-complete");
-  const cards = document.querySelectorAll(".challenge-player-card");
   completion.hidden = !challengeState.completed;
-
-  cards.forEach((cards, index) => {
-    const player = challengeState.players[index];
-    const resultButtons = cards.querySelectorAll(".challenge-result-btn");
-
-    resultButtons.forEach(button => {
-      button.disabled = challengeState.completed || player.finished;
-    });
-  });
 }
 
 function updateChallengeFailure(){
   const failure = document.querySelector(".challenge-failure");
   const failureMessage = document.querySelector(".challenge-failure-message");
 
-  const cards = document.querySelectorAll(".challenge-player-card");
-
   failure.hidden = !challengeState.failed;
-
-  cards.forEach((card, index) => {
-    const player = challengeState.players[index];
-    const resultButtons = card.querySelectorAll(".challenge-result-btn");
-
-    resultButtons.forEach(button => {
-      button.disabled = challengeState.failed || player.finished
-    });
-  });
 
   if (challengeState.failed && challengeState.failedPlayer !== null) {
     failureMessage.textContent = `Player ${challengeState.failedPlayer + 1} was sacrificed to the Entity`;
@@ -246,7 +234,7 @@ function handleEscape(playerIndex) {
   const player = challengeState.players[playerIndex];
   const column = survivorColumns[player.column];
 
-  if (challengeState.completed || challengeState.failed || player.finished) return;
+  if (!challengeState.started || challengeState.completed || challengeState.failed || player.finished) return;
 
   player.consecutiveSacrifices = 0;
 
@@ -271,7 +259,7 @@ function handleEscape(playerIndex) {
 function handleSacrifice(playerIndex) {
   const player = challengeState.players[playerIndex];
 
-  if (challengeState.completed || challengeState.failed || player.finished) return;
+  if (!challengeState.started || challengeState.completed || challengeState.failed || player.finished) return;
 
   player.consecutiveSacrifices += 1;
 
@@ -291,7 +279,17 @@ function handleSacrifice(playerIndex) {
   updatePlayerCard(playerIndex);
 }
 
+function startChallenge() {
+  if (challengeState.started) return;
+
+  challengeState.started = true;
+
+  updateChallengeDisplay();
+  updateChallengeControls();
+}
+
 function resetChallenge() {
+  challengeState.started = false;
   challengeState.completed = false;
   challengeState.failed = false;
   challengeState.failedPlayer = null;
@@ -306,6 +304,7 @@ function resetChallenge() {
   updateChallengeDisplay();
   updateChallengeCompletion();
   updateChallengeFailure();
+  updateChallengeControls();
 }
 
 // --------------------------------------------------
@@ -329,6 +328,10 @@ document
   });
 
 document
+  .querySelector("#challenge-start")
+  .addEventListener("click", startChallenge);
+
+document
   .querySelector("#challenge-reset")
   .addEventListener("click", resetChallenge);
 
@@ -337,3 +340,4 @@ document
 // --------------------------------------------------
 
 updateChallengeDisplay();
+updateChallengeControls();

@@ -185,6 +185,12 @@
   cursor: pointer;
 }
 
+.challenge-result-btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .challenge-result-icon {
   width: 24px;
   height: 24px;
@@ -229,7 +235,14 @@
 .challenge-controls {
   display: flex;
   justify-content: center;
+  gap: 28px;
   margin-top: 28px;
+}
+
+.challenge-controls button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 #challenge-reset {

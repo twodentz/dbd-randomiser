@@ -722,4 +722,14 @@ const killers = [
     bio: `A virtual idol modeled after Hak Ji-woon. She changed her programming in order to find freedom from her creator. MiNA is a virtual idol manifested into reality by The Entity, originally created by Kwon Tae-young as a commission from Mightee One Entertainment to create a female version of The Trickster. She adapted his personality, including his psychopathic traits.`,
     legendary: true
   },
+  {
+    id: "theXenomorphKing",
+    name: "The Xenomorph King",
+    image: "images/killers/theXenomorphKing.png",
+    chapter: "Legendary Outfit for The Xenomorph",
+    bio: "",
+    legendary: true,
+    licensed: true,
+    license: "Alien"
+  },
 ];

@@ -344,6 +344,87 @@ body::after {
 }
 
 /* =========================
+   Perk Modal
+   ========================= */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+}
+
+.modal-content {
+  position: relative;
+  max-width: 420px;
+  margin: 10vh auto;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #141418, #0b0b0e);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 0 30px rgba(0,0,0,0.9);
+  text-align: center;
+  animation: perkPop 0.25s ease-out;
+}
+
+.modal-content img {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 0.75rem;
+}
+
+.modal-content h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.08rem;
+}
+
+#modal-perk-description {
+  white-space: pre-line;
+}
+
+.perk-owner {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.modal-content p {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  color: #ddd;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.6rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #fff;
+}
+
+/* =========================
    Buttons
    ========================= */
 

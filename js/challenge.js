@@ -196,6 +196,10 @@ function updatePlayerCard(playerIndex) {
 
     image.src = perk.image;
     image.alt = perk.name;
+
+    button.onclick = () => {
+      openPerkModal(perk);
+    };
   });
 
   // Finished State

@@ -728,4 +728,24 @@ const survivors = [
     licensed: true,
     license: "Alien"
   },
+  {
+    id: "2B",
+    name: "2B",
+    image: "images/survivors/2B.png",
+    chapter: "Legendary Outfit for Feng Min",
+    bio: "2B is an all-purpose Battler android, deployed as a member of the automated YoRHa infantry. She is equipped with a multitude of weapons for close quarters combat and can attack from range using a Pod support system.",
+    legendary: true,
+    licensed: true,
+    license: "NieR: Automata"
+  },
+  {
+    id: "a2",
+    name: "A2",
+    image: "images/survivors/A2.png",
+    chapter: "Legendary Outfit for Yui Kimura",
+    bio: "A2 is a prototype Attacker model of the YoRHa android line, and combat data from her and her comrades were used to create the superior current lines, including YoRHa No.2 Type B and YoRHa No.9 Type S. She doesn't like to speak and often keeps to herself.",
+    legendary: true,
+    licensed: true,
+    license: "NieR: Automata"
+  },
 ];
